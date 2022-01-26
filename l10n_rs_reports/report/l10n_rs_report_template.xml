@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+<template id="report_l10n_rs_tax">
+    <t t-call="web.html_container">
+        <t t-call="web.internal_layout">
+            <link
+                    rel="stylesheet"
+                    href="/l10n_rs_reports/static/src/css/l10n_rs_report.css"
+                />
+            <div class="page">
+                <h3 class="text-center mb32 font-weight-bold">REPUBLIKA SRBIJA</h3>
+                <h3
+                        class="text-center mb32 font-weight-bold"
+                    >MINISTARSTVO FINANSIJA - PORESKA UPRAVA</h3>
+                <br />
+                <table class="l10n_rs_report_table">
+                    <tr>
+                        <td
+                                class="font-weight-bold"
+                            >PORESKA PRIJAVA POREZA NA DODATU VREDNOST</td>
+                        <td class="font-weight-bold text-center">Obrazac PP PDV</td>
+                    </tr>
+                </table>
+                <br />
+                <span>I Podaci o prijavi:</span>
+                <div class="l10n_rs_inline_div">
+                    <table class="l10n_rs_report_table_small">
+                        <tr>
+                            <td colspan="2">
+                                1.1. Poreski period
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span t-esc="data['date_start']" /></td>
+                            <td><span t-esc="data['date_end']" /></td>
+                        </tr>
+                    </table>
+                    <table class="l10n_rs_report_table_small">
+                        <tr>
+                            <td>
+                                1.2. Izmena prijave
+                            </td>
+                            <td class="l10n_rs_white_cell l10n_rs_cell_20">
+<!--                               <table class="table-sm table-bordered m-0 p-0">-->
+<!--                                   <tr>-->
+<!--                                       <td>&amp;nbsp;</td>-->
+<!--                                   </tr>-->
+<!--                                   <tr>-->
+<!--                                        <td>-->
+<!--                                            <span style="font-size: 6px">vrsta</span>-->
+<!--                                        </td>-->
+<!--                                    </tr>-->
+<!--                               </table>-->
+                                &amp;nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+<!--                                <table class="table-sm m-0 p-0">-->
+<!--                                    <tr>-->
+<!--                                        <td>&amp;nbsp;</td>-->
+<!--                                    </tr>-->
+<!--                                    <tr>-->
+<!--                                        <td>-->
+<!--                                            <span style="font-size: 6px">1.2a Identifikacioni broj prijave koja se menja</span>-->
+<!--                                        </td>-->
+<!--                                    </tr>-->
+<!--                               </table>-->
+                                <span
+                                        style="font-size: 6px"
+                                    >1.2a Identifikacioni broj prijave koja se menja</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br />
+                <br />
+                <br />
+                <span>II Podaci o podnosiocu:</span>
+                <table class="l10n_rs_report_table">
+                    <tr class="l10n_rs_pdv_row">
+                        <td class="l10n_rs_pdv_cell_25"><span
+                                >2.1 Tip podnosioca</span></td>
+                        <td class="l10n_rs_pdv_cell_25"><span
+                                >2.2 Oznaka poreskog perioda</span></td>
+                        <td class="l10n_rs_pdv_cell_50"><span
+                                >2.3 Poreski identifikacioni broj</span><span
+                                    class="l10n_rs_input_span l10n_rs_input_span_vat"
+                                    t-esc="data['vat']"
+                                /></td>
+                    </tr>
+                </table>
+
+                <table class="l10n_rs_report_table">
+                    <tr class="l10n_rs_pdv_row">
+                        <td class="l10n_rs_pdv_cell_25"><span
+                                >2.4. Naziv, odnosno ime i prezime i adresa</span></td>
+                        <td class="l10n_rs_pdv_cell_75 l10n_rs_white_cell"><span
+                                    t-esc="data['company_info']"
+                                /></td>
+                    </tr>
+                    <tr class="l10n_rs_pdv_row">
+                        <td class="l10n_rs_pdv_cell_25"><span
+                                >2.5. Elektronska pošta</span></td>
+                        <td class="l10n_rs_pdv_cell_75 l10n_rs_white_cell"><span
+                                    t-esc="data['email']"
+                                /></td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+                <table class="l10n_rs_report_table">
+                    <tr class="l10n_rs_pdv_row">
+                        <th class="l10n_rs_pdv_cell_05" />
+                        <th class="l10n_rs_pdv_cell_40" />
+                        <th class="l10n_rs_pdv_cell_05" />
+                        <th
+                                class="l10n_rs_pdv_cell_25 text-center"
+                            >Iznos naknade bez PDV</th>
+                        <th class="l10n_rs_pdv_cell_05" />
+                        <th
+                                class="l10n_rs_pdv_cell_20 text-center"
+                            >PDV (u dinarima bez decimala)</th>
+                    </tr>
+                    <tr class="l10n_rs_pdv_row font-weight-bold">
+                        <td class="l10n_rs_pdv_cell_05" />
+                        <td class="l10n_rs_pdv_cell_40">III PROMET DOBARA I USLUGA</td>
+                        <td class="l10n_rs_pdv_cell_05" />
+                        <td class="l10n_rs_pdv_cell_25" />
+                        <td class="l10n_rs_pdv_cell_05" />
+                        <td class="l10n_rs_pdv_cell_20" />
+                    </tr>
+                    <tr class="l10n_rs_pdv_row">
+                        <td class="l10n_rs_pdv_cell_05">1.</td>
+                        <td
+                                class="l10n_rs_pdv_cell_40"
+                            >Promet dobara i usluga koji je oslobođen PDV sa pravom na odbitak prethodnog poreza</td>
+                        <td class="l10n_rs_pdv_cell_05">001</td>
+                        <td class="l10n_rs_pdv_cell_25 l10n_rs_white_cell"><span
+                                    t-esc="data['001']"
+                                /></td>
+                        <td class="l10n_rs_pdv_cell_05" />
+                        <td class="l10n_rs_pdv_cell_20" />
+                    </tr>
+                    <tr class="l10n_rs_pdv_row">
+                        <td class="l10n_rs_pdv_cell_05">2.</td>
+                        <td
+                                class="l10n_rs_pdv_cell_40"
+                            >Promet dobara i usluga koji je oslobođen PDV bez prava na odbitak prethodnog poreza</td>
+                        <td class="l10n_rs_pdv_cell_05">002</td>
+                        <td class="l10n_rs_pdv_cell_25 l10n_rs_white_cell"><span
+                                    t-esc="data['002']"
+                                /></td>
+                        <td class="l10n_rs_pdv_cell_05" />
+                        <td class="l10n_rs_pdv_cell_20" />
+                    </tr>
+                    <tr class="l10n_rs_pdv_row">
+                        <td class="l10n_rs_pdv_cell_05">3.</td>
+                        <td
+                                class="l10n_rs_pdv_cell_40"
+                            >Promet dobara i usluga po opštoj stopi</td>
+                        <td class="l10n_rs_pdv_cell_05">003</td>
+                        <td class="l10n_rs_pdv_cell_25 l10n_rs_white_cell"><span
+                                    t-esc="data['003']"
+                                /></td>
+                        <td class="l10n_rs_pdv_cell_05">103</td>
+                        <td class="l10n_rs_pdv_cell_20 l10n_rs_white_cell"><span
+                                    t-esc="data['103']"
+                                /></td>
+                    </tr>
+                    <tr class="l10n_rs_pdv_row">
+                        <td class="l10n_rs_pdv_cell_05">4.</td>
+                        <td
+                                class="l10n_rs_pdv_cell_40"
+                            >Promet dobara i usluga po posebnoj stopi</td>
+                        <td class="l10n_rs_pdv_cell_05">004</td>
+                        <td class="l10n_rs_pdv_cell_25 l10n_rs_white_cell"><span
+                                    t-esc="data['004']"
+                                /></td>
+                        <td class="l10n_rs_pdv_cell_05">104</td>
+                        <td class="l10n_rs_pdv_cell_20 l10n_rs_white_cell"><span
+                                    t-esc="data['104']"
+                                /></td>
+                    </tr>
+                    <tr class="l10n_rs_pdv_row font-weight-bold">
+                        <td class="l10n_rs_pdv_cell_05">5.</td>
+                        <td class="l10n_rs_pdv_cell_40">ZBIR (1+2+3+4)</td>
+                        <td class="l10n_rs_pdv_cell_05">005</td>
+                        <td class="l10n_rs_pdv_cell_25 l10n_rs_white_cell"><span
+                                    t-esc="data['005']"
+                                /></td>
+                        <td class="l10n_rs_pdv_cell_05">105</td>
+                        <td class="l10n_rs_pdv_cell_20 l10n_rs_white_cell"><span
+                                    t-esc="data['105']"
+                                /></td>
+                    </tr>
+                    <tr class="l10n_rs_pdv_row font-weight-bold">
+                        <td class="l10n_rs_pdv_cell_05" />
+                        <td class="l10n_rs_pdv_cell_40">IV PRETHODNI POREZ</td>
+                        <td class="l10n_rs_pdv_cell_05" />
+                        <td class="l10n_rs_pdv_cell_25" />
+                        <td class="l10n_rs_pdv_cell_05" />
+                        <td class="l10n_rs_pdv_cell_20" />
+                    </tr>
+                    <tr class="l10n_rs_pdv_row">
+                        <td class="l10n_rs_pdv_cell_05">6.</td>
+                        <td
+                                class="l10n_rs_pdv_cell_40"
+                            >Prethodni porez plaćen prilikom uvoza</td>
+                        <td class="l10n_rs_pdv_cell_05">006</td>
+                        <td class="l10n_rs_pdv_cell_25 l10n_rs_white_cell"><span
+                                    t-esc="data['006']"
+                                /></td>
+                        <td class="l10n_rs_pdv_cell_05">106</td>
+                        <td class="l10n_rs_pdv_cell_20 l10n_rs_white_cell"><span
+                                    t-esc="data['106']"
+                                /></td>
+                    </tr>
+                    <tr class="l10n_rs_pdv_row">
+                        <td class="l10n_rs_pdv_cell_05">7.</td>
+                        <td
+                                class="l10n_rs_pdv_cell_40"
+                            >PDV nadoknada plaćena poljoprivredniku</td>
+                        <td class="l10n_rs_pdv_cell_05">007</td>
+                        <td class="l10n_rs_pdv_cell_25 l10n_rs_white_cell"><span
+                                    t-esc="data['007']"
+                                /></td>
+                        <td class="l10n_rs_pdv_cell_05">107</td>
+                        <td class="l10n_rs_pdv_cell_20 l10n_rs_white_cell"><span
+                                    t-esc="data['107']"
+                                /></td>
+                    </tr>
+                    <tr class="l10n_rs_pdv_row">
+                        <td class="l10n_rs_pdv_cell_05">8.</td>
+                        <td
+                                class="l10n_rs_pdv_cell_40"
+                            >Prethodni porez, osim prethodnog poreza sa red. br. 6. i 7.</td>
+                        <td class="l10n_rs_pdv_cell_05">008</td>
+                        <td class="l10n_rs_pdv_cell_25 l10n_rs_white_cell"><span
+                                    t-esc="data['008']"
+                                /></td>
+                        <td class="l10n_rs_pdv_cell_05">108</td>
+                        <td class="l10n_rs_pdv_cell_20 l10n_rs_white_cell"><span
+                                    t-esc="data['108']"
+                                /></td>
+                    </tr>
+                    <tr class="l10n_rs_pdv_row font-weight-bold">
+                        <td class="l10n_rs_pdv_cell_05">9.</td>
+                        <td class="l10n_rs_pdv_cell_40">ZBIR (6+7+8)</td>
+                        <td class="l10n_rs_pdv_cell_05">009</td>
+                        <td class="l10n_rs_pdv_cell_25 l10n_rs_white_cell"><span
+                                    t-esc="data['009']"
+                                /></td>
+                        <td class="l10n_rs_pdv_cell_05">109</td>
+                        <td class="l10n_rs_pdv_cell_20 l10n_rs_white_cell"><span
+                                    t-esc="data['109']"
+                                /></td>
+                    </tr>
+                    <tr class="l10n_rs_pdv_row font-weight-bold">
+                        <td class="l10n_rs_pdv_cell_05" />
+                        <td class="l10n_rs_pdv_cell_40">V PORESKA OBAVEZA</td>
+                        <td class="l10n_rs_pdv_cell_05" />
+                        <td class="l10n_rs_pdv_cell_25" />
+                        <td class="l10n_rs_pdv_cell_05" />
+                        <td class="l10n_rs_pdv_cell_20" />
+                    </tr>
+                    <tr class="l10n_rs_pdv_row">
+                        <td class="l10n_rs_pdv_cell_05">10.</td>
+                        <td
+                                class="l10n_rs_pdv_cell_40"
+                            >Iznos PDV u poreskom periodu (5 - 9)</td>
+                        <td class="l10n_rs_pdv_cell_05" />
+                        <td class="l10n_rs_pdv_cell_25" />
+                        <td class="l10n_rs_pdv_cell_05">110</td>
+                        <td class="l10n_rs_pdv_cell_20 l10n_rs_white_cell"><span
+                                    t-esc="data['110']"
+                                /></td>
+                    </tr>
+                    <tr class="l10n_rs_pdv_row l10n_rs_white_cell">
+                        <td colspan="6" class="l10n_rs_pdv_cell_empty" />
+                    </tr>
+                    <tr class="l10n_rs_pdv_row">
+                        <td class="l10n_rs_pdv_cell_05">11.</td>
+                        <td class="l10n_rs_pdv_cell_40">Povraćaj</td>
+                        <td class="l10n_rs_pdv_cell_05 l10n_rs_white_cell" />
+                        <td class="l10n_rs_pdv_cell_25" />
+                        <td class="l10n_rs_pdv_cell_05" />
+                        <td class="l10n_rs_pdv_cell_20" />
+                    </tr>
+                </table>
+            </div>
+        </t>
+    </t>
+</template>
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record
+        id="action_account_print_tax_report_l10n_rs_menu"
+        model="ir.actions.act_window"
+    >
+        <field name="name">PDV Report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">account.print.tax.l10n.rs</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="account_tax_report_print_l10n_rs_view" />
+        <field name="target">new</field>
+    </record>
+
+    <menuitem
+        id="account_reports_l10n_rs_reports_menu"
+        name="Serbian Reports"
+        parent="account.menu_finance_reports"
+        sequence="20"
+    />
+    <menuitem
+        id="menu_print_tax_report_l10n_rs"
+        name="PDV Report"
+        parent="account_reports_l10n_rs_reports_menu"
+        action="action_account_print_tax_report_l10n_rs_menu"
+        sequence="20"
+    />
+
+</odoo>

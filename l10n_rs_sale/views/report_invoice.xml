@@ -1,0 +1,174 @@
+<odoo>
+    <template
+        id="l10n_rs_report_invoice_document_inherit"
+        inherit_id="account.report_invoice_document"
+    >
+        <!--hide down payment lines from the invoice body -->
+        <xpath
+            expr="//tbody[hasclass('invoice_tbody')]/t[@t-set='lines']"
+            position="attributes"
+        >
+           <attribute
+                name="t-value"
+                separator=" "
+                add=".filtered(lambda l: l.quantity >= 0 and l.display_type != 'line_section')"
+            />
+        </xpath>
+
+        <!--show list of associated down payments-->
+        <xpath expr="//table[@name='invoice_line_table']" position="after">
+            <t t-set="invoice_has_downpayments" t-value="o.has_downpayment()" />
+            <div
+                id="down_payments"
+                t-if="not o.is_downpayment and invoice_has_downpayments"
+            >
+                <div class="clearfix">
+                    <div id="total_no_downpayments" class="row">
+                        <div
+                            t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-6'} ml-auto"
+                        >
+                            <table
+                                class="table table-sm"
+                                style="page-break-inside: avoid;"
+                            >
+                                <tr class="border-black o_subtotal" style="">
+                                    <td><strong>Subtotal</strong></td>
+                                    <td class="text-right" colspan="99">
+                                        <span
+                                            t-field="o.amount_untaxed_no_downpayemnt"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr class="border-black o_subtotal" style="">
+                                    <td><strong>Tax</strong></td>
+                                    <td><strong>Base</strong></td>
+                                    <td class="text-right">
+                                        <strong>Amount</strong>
+                                    </td>
+                                </tr>
+                                <t
+                                    t-set="tax_totals"
+                                    t-value="json.loads(o.tax_totals_json)"
+                                />
+                                <t t-foreach="tax_totals['subtotals']" t-as="subtotal">
+                                    <t
+                                        t-foreach="[group for group in tax_totals['groups_by_subtotal'][subtotal['name']] if group['tax_group_base_amount'] >= 0]"
+                                        t-as="amount_by_group"
+                                    >
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    t-esc="amount_by_group['tax_group_name']"
+                                                />
+                                            </td>
+                                            <td>
+                                                <span
+                                                    t-esc="amount_by_group['formatted_tax_group_base_amount']"
+                                                />
+                                            </td>
+                                            <td class="text-right o_price_total">
+                                                <span
+                                                    class="text-nowrap"
+                                                    t-esc="amount_by_group['formatted_tax_group_amount']"
+                                                />
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </t>
+                                <tr class="border-black o_total">
+                                    <td><strong>Total</strong></td>
+                                    <td class="text-right" colspan="99">
+                                        <span
+                                            class="text-nowrap"
+                                            t-field="o.amount_total_no_downpayemnt"
+                                        />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="padding-bottom:10px; font-size:small;">
+                    <span>Down payments deducted from the invoice</span>
+                    <div>
+                        <table class="table table-sm o_main_table">
+                            <thead>
+                                <tr>
+                                    <th class="text-left"><span>Description</span></th>
+                                    <th class="text-left"><span>Date</span></th>
+                                    <th class="text-right"><span>Quantity</span></th>
+                                    <th class="text-right">Amount</th>
+                                    <th
+                                        t-attf-class="text-left {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
+                                    ><span>Taxes</span></th>
+                                    <th class="text-right">Total Price</th>
+                                </tr>
+                            </thead>
+                            <t
+                                t-set="associated_down_payments"
+                                t-value="o.associated_down_payments()"
+                            />
+                            <t t-foreach="associated_down_payments" t-as="down_payment">
+                                <tr style="border-bottom:1px solid #dddddd;">
+                                    <td class="text-left">
+                                        <span t-esc="down_payment.name" />
+                                    </td>
+                                    <td class="text-left">
+                                        <t t-esc="down_payment.invoice_date" />
+                                    </td>
+                                    <td class="text-right">1</td>
+                                    <td class="text-right">
+                                        <span
+                                            t-esc="down_payment.amount_untaxed"
+                                            t-options='{"widget": "monetary", "display_currency": down_payment.currency_id}'
+                                        />
+                                    </td>
+                                    <td
+                                        t-attf-class="text-left {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
+                                    >
+                                        <span
+                                            t-esc="', '.join(map(lambda x: (x.description or x.name), down_payment.invoice_line_ids.tax_ids))"
+                                        />
+                                    </td>
+                                    <td class="text-right">
+                                        <span
+                                            t-esc="down_payment.amount_total"
+                                            t-options='{"widget": "monetary", "display_currency": down_payment.currency_id}'
+                                        />
+                                    </td>
+                                </tr>
+                            </t>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+    <template id="l10n_rs_document_tax_totals" inherit_id="account.document_tax_totals">
+        <!--show total from sale order on final invoice -->
+        <xpath expr="//tr[hasclass('o_total')]" position="after">
+            <t t-if="o">
+                <t
+                    t-set="order"
+                    t-value="o.invoice_line_ids.mapped('sale_line_ids.order_id')"
+                />
+                <tr
+                    class="border-black"
+                    t-if="len(order) == 1 and order[0].amount_total != o.amount_total and not o.is_downpayment"
+                    style="font-size: smaller;"
+                >
+                    <td colspan="2"><strong>Total per offer <span
+                                t-esc="order.name"
+                            /></strong></td>
+                    <td class="text-right">
+                        <span
+                            t-field="order[0].amount_total"
+                            t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"
+                        />
+                    </td>
+                </tr>
+            </t>
+        </xpath>
+    </template>
+</odoo>

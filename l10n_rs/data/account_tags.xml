@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="0">
+        <record id="account_tag_rs_poslovni_rashodi" model="account.account.tag">
+            <field name="name">poslovni rashodi</field>
+            <field name="applicability">accounts</field>
+        </record>
+        <record id="account_tag_rs_finansijski_rashodi" model="account.account.tag">
+            <field name="name">finansijski rashodi</field>
+            <field name="applicability">accounts</field>
+        </record>
+        <record id="account_tag_rs_ostali_prihodi" model="account.account.tag">
+            <field name="name">ostali prihodi</field>
+            <field name="applicability">accounts</field>
+        </record>
+        <record id="account_tag_rs_poslovni_prihodi" model="account.account.tag">
+            <field name="name">poslovni prihodi</field>
+            <field name="applicability">accounts</field>
+        </record>
+        <record id="account_tag_rs_finansijski_prihodi" model="account.account.tag">
+            <field name="name">finansijski prihodi</field>
+            <field name="applicability">accounts</field>
+        </record>
+        <record id="account_tag_rs_ostali_rashodi" model="account.account.tag">
+            <field name="name">ostali rashodi</field>
+            <field name="applicability">accounts</field>
+        </record>
+        <record model="account.account.type" id="account_type_rs_other">
+            <field name="name">Ostalo</field>
+            <field name="type">other</field>
+            <field name="internal_group">asset</field>
+            <field name="include_initial_balance" eval="False" />
+        </record>
+    </data>
+</odoo>

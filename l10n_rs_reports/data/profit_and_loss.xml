@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+
+    <record id="l10n_rs_profit_and_loss" model="account.financial.html.report">
+        <field name="name">Bilans Uspeha</field>
+        <field name="analytic" eval="True" />
+        <field name="unfold_all_filter" eval="True" />
+        <field name="show_journal_filter" eval="False" />
+        <field name='parent_id' ref='account.account_reports_legal_statements_menu' />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_income_business"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">A. POSLOVNI PRIHODI</field>
+        <field name="code">AOP1001</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field name="formulas">AOP1002 + AOP1009 + AOP1016 + AOP1017</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1001" />
+        <field name="level" eval="0" />
+    </record>
+
+    <record id="l10n_rs_report_line_60" model="account.financial.html.report.line">
+        <field name="name">60 PRIHODI OD PRODAJE</field>
+        <field name="code">AOP1002</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '600'), ('account_id.group_id.code_prefix_start', '=', '601'), ('account_id.group_id.code_prefix_start', '=', '602'), ('account_id.group_id.code_prefix_start', '=', '603'), ('account_id.group_id.code_prefix_start', '=', '604'), ('account_id.group_id.code_prefix_start', '=', '605')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_income_business' />
+        <field name="sequence" eval="1002" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_61" model="account.financial.html.report.line">
+        <field name="name">61 PRIHODI OD PRODAJE PROIZVODA I USLUGA</field>
+        <field name="code">AOP1009</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '610'), ('account_id.group_id.code_prefix_start', '=', '611'), ('account_id.group_id.code_prefix_start', '=', '612'), ('account_id.group_id.code_prefix_start', '=', '613'), ('account_id.group_id.code_prefix_start', '=', '614'), ('account_id.group_id.code_prefix_start', '=', '615')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_income_business' />
+        <field name="sequence" eval="1003" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_64" model="account.financial.html.report.line">
+        <field
+                name="name"
+            >64 PRIHODI OD PREMIJA, SUBVENCIJA, DOTACIJA, DONACIJA I SL.</field>
+        <field name="code">AOP1016</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="['|', ('account_id.group_id.code_prefix_start', '=', '640'), ('account_id.group_id.code_prefix_start', '=', '641')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_income_business' />
+        <field name="sequence" eval="1004" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_65" model="account.financial.html.report.line">
+        <field name="name">65 DRUGI POSLOVNI PRIHODI</field>
+        <field name="code">AOP1017</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '650'), ('account_id.group_id.code_prefix_start', '=', '651'), ('account_id.group_id.code_prefix_start', '=', '652'), ('account_id.group_id.code_prefix_start', '=', '659')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_income_business' />
+        <field name="sequence" eval="1005" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_expense_business"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">B. POSLOVNI RASHODI</field>
+        <field name="code">AOP1018</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field
+                name="formulas"
+            >AOP1019 - AOP1020 - AOP1021 + AOP1022 + AOP1023 + AOP1024 + AOP1025 + AOP1026 + AOP1027 + AOP1028 + AOP1029</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1006" />
+        <field name="level" eval="0" />
+    </record>
+
+    <record id="l10n_rs_report_line_50" model="account.financial.html.report.line">
+        <field name="name">50 NABAVNA VREDNOST PRODATE ROBE</field>
+        <field name="code">AOP1019</field>
+        <field name="formulas">sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '5'), ('account_id.group_id.code_prefix_start', '=', '501'), ('account_id.group_id.code_prefix_start', '=', '502'), ('account_id.group_id.code_prefix_start', '=', '503')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_expense_business' />
+        <field name="sequence" eval="1007" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_62" model="account.financial.html.report.line">
+        <field name="name">62 PRIHODI OD AKTIVIRANJA UCINAKA ROBE</field>
+        <field name="code">AOP1020</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="['|', ('account_id.group_id.code_prefix_start', '=', '620'), ('account_id.group_id.code_prefix_start', '=', '621')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_expense_business' />
+        <field name="sequence" eval="1008" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_630" model="account.financial.html.report.line">
+        <field
+                name="name"
+            >630 POVEĆANJE VREDNOSTI ZALIHA NEDOVRŠENIH I GOTOVIH PROIZVODA I NEDOVRŠENIH USLUGA</field>
+        <field name="code">AOP1021</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="[('account_id.group_id.code_prefix_start', '=', '630')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_expense_business' />
+        <field name="sequence" eval="1009" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_631" model="account.financial.html.report.line">
+        <field
+                name="name"
+            >631 SMANJENJE VREDNOSTI ZALIHA NEDOVRŠENIH I GOTOVIH PROIZVODA I NEDOVRŠENIH USLUGA</field>
+        <field name="code">AOP1022</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="[('account_id.group_id.code_prefix_start', '=', '631')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_expense_business' />
+        <field name="sequence" eval="1010" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_51" model="account.financial.html.report.line">
+        <field name="name">51 osim 513 TROŠKOVI MATERIJALA</field>
+        <field name="code">AOP1023</field>
+        <field name="formulas">sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '510'), ('account_id.group_id.code_prefix_start', '=', '511'), ('account_id.group_id.code_prefix_start', '=', '512'), ('account_id.group_id.code_prefix_start', '=', '514'), ('account_id.group_id.code_prefix_start', '=', '515')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_expense_business' />
+        <field name="sequence" eval="1011" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_513" model="account.financial.html.report.line">
+        <field name="name">513 TROŠKOVI GORIVA I ENERGIJE</field>
+        <field name="code">AOP1024</field>
+        <field name="formulas">sum</field>
+        <field
+                name="domain"
+                eval="[('account_id.group_id.code_prefix_start', '=', '513')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_expense_business' />
+        <field name="sequence" eval="1012" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_52" model="account.financial.html.report.line">
+        <field
+                name="name"
+            >52 TROŠKOVI ZARADA, NAKNADA ZARADA I OSTALI LIČNI RASHODI</field>
+        <field name="code">AOP1025</field>
+        <field name="formulas">sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', '|', '|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '520'), ('account_id.group_id.code_prefix_start', '=', '521'), ('account_id.group_id.code_prefix_start', '=', '522'), ('account_id.group_id.code_prefix_start', '=', '523'), ('account_id.group_id.code_prefix_start', '=', '524'), ('account_id.group_id.code_prefix_start', '=', '525'), ('account_id.group_id.code_prefix_start', '=', '526'), ('account_id.group_id.code_prefix_start', '=', '529')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_expense_business' />
+        <field name="sequence" eval="1013" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_53" model="account.financial.html.report.line">
+        <field name="name">53 TROŠKOVI PROIZVODNIH USLUGA</field>
+        <field name="code">AOP1026</field>
+        <field name="formulas">sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', '|', '|', '|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '530'), ('account_id.group_id.code_prefix_start', '=', '531'), ('account_id.group_id.code_prefix_start', '=', '532'), ('account_id.group_id.code_prefix_start', '=', '533'), ('account_id.group_id.code_prefix_start', '=', '534'), ('account_id.group_id.code_prefix_start', '=', '535'), ('account_id.group_id.code_prefix_start', '=', '536'), ('account_id.group_id.code_prefix_start', '=', '537'), ('account_id.group_id.code_prefix_start', '=', '539')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_expense_business' />
+        <field name="sequence" eval="1014" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_54" model="account.financial.html.report.line">
+        <field name="name">54 TROŠKOVI AMORTIZACIJE</field>
+        <field name="code">AOP1027</field>
+        <field name="formulas">sum</field>
+        <field
+                name="domain"
+                eval="[('account_id.group_id.code_prefix_start', '=', '540')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_expense_business' />
+        <field name="sequence" eval="1015" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_541" model="account.financial.html.report.line">
+        <field name="name">541 do 549 TROŠKOVI DUGOROČNIH REZERVISANJA</field>
+        <field name="code">AOP1028</field>
+        <field name="formulas">sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '541'), ('account_id.group_id.code_prefix_start', '=', '542'), ('account_id.group_id.code_prefix_start', '=', '543'), ('account_id.group_id.code_prefix_start', '=', '544'), ('account_id.group_id.code_prefix_start', '=', '545'), ('account_id.group_id.code_prefix_start', '=', '549')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_expense_business' />
+        <field name="sequence" eval="1016" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_55" model="account.financial.html.report.line">
+        <field name="name">55 NEMATERIJALNI TROŠKOVI</field>
+        <field name="code">AOP1029</field>
+        <field name="formulas">sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', '|', '|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '550'), ('account_id.group_id.code_prefix_start', '=', '551'), ('account_id.group_id.code_prefix_start', '=', '552'), ('account_id.group_id.code_prefix_start', '=', '553'), ('account_id.group_id.code_prefix_start', '=', '554'), ('account_id.group_id.code_prefix_start', '=', '555'), ('account_id.group_id.code_prefix_start', '=', '556'), ('account_id.group_id.code_prefix_start', '=', '559')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_expense_business' />
+        <field name="sequence" eval="1017" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_profit_business"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">V. POSLOVNI DOBITAK</field>
+        <field name="code">AOP1030</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field
+                name="formulas"
+            >AOP1001 - AOP1018 if AOP1001 - AOP1018 > 0 else 0.0</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1018" />
+        <field name="level" eval="0" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_loss_business"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">G. POSLOVNI GUBITAK</field>
+        <field name="code">AOP1031</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field
+                name="formulas"
+            >abs(AOP1001 - AOP1018) if AOP1001 - AOP1018 &lt; 0 else 0.0</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1019" />
+        <field name="level" eval="0" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_income_finance"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">D. FINANSIJSKI PRIHODI</field>
+        <field name="code">AOP1032</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field name="formulas">AOP1033 + AOP1038 + AOP1039</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1020" />
+        <field name="level" eval="0" />
+    </record>
+
+    <record id="l10n_rs_report_line_66" model="account.financial.html.report.line">
+        <field
+                name="name"
+            >66, OSIM 662,663 i 664 FINANSIJSKI PRIHODI OD POVEZANIH LICA I OSTALI FINANSIJSKI PRIHODI</field>
+        <field name="code">AOP1033</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '660'), ('account_id.group_id.code_prefix_start', '=', '661'), ('account_id.group_id.code_prefix_start', '=', '665'), ('account_id.group_id.code_prefix_start', '=', '669')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_income_finance' />
+        <field name="sequence" eval="1021" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_662" model="account.financial.html.report.line">
+        <field name="name">662 PRIHODI OD KAMATA (OD TREĆIH LICA)</field>
+        <field name="code">AOP1038</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="[('account_id.group_id.code_prefix_start', '=', '662')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_income_finance' />
+        <field name="sequence" eval="1022" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_663" model="account.financial.html.report.line">
+        <field
+                name="name"
+            >663 i 664 POZITIVNE KURSNE RAZLIKE I POZITIVNI EFEKTI VALUTNE KLAUZULE (PREMA TREĆIM LICIMA)</field>
+        <field name="code">AOP1039</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="['|', ('account_id.group_id.code_prefix_start', '=', '663'), ('account_id.group_id.code_prefix_start', '=', '664')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_income_finance' />
+        <field name="sequence" eval="1023" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_expense_finance"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">Đ. FINANSIJSKI RASHODI</field>
+        <field name="code">AOP1040</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field name="formulas">AOP1041 + AOP1046 + AOP1047</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1024" />
+        <field name="level" eval="0" />
+    </record>
+
+    <record id="l10n_rs_report_line_56" model="account.financial.html.report.line">
+        <field name="name">56, OSIM 562, 563 i 564</field>
+        <field name="code">AOP1041</field>
+        <field name="formulas">sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '560'), ('account_id.group_id.code_prefix_start', '=', '561'), ('account_id.group_id.code_prefix_start', '=', '565'), ('account_id.group_id.code_prefix_start', '=', '566'), ('account_id.group_id.code_prefix_start', '=', '569')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_expense_finance' />
+        <field name="sequence" eval="1025" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_562" model="account.financial.html.report.line">
+        <field name="name">562 RASHODI KAMATA (PREMA TREĆIM LICIMA)</field>
+        <field name="code">AOP1046</field>
+        <field name="formulas">sum</field>
+        <field
+                name="domain"
+                eval="[('account_id.group_id.code_prefix_start', '=', '562')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_expense_finance' />
+        <field name="sequence" eval="1026" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_563" model="account.financial.html.report.line">
+        <field
+                name="name"
+            >563 i 564 NEGATIVNE KURSNE RAZLIKE I NEGATIVNI EFEKTI VALUTNE KLAUZULE (PREMA TREĆIM LICIMA)</field>
+        <field name="code">AOP1047</field>
+        <field name="formulas">sum</field>
+        <field
+                name="domain"
+                eval="['|', ('account_id.group_id.code_prefix_start', '=', '563'), ('account_id.group_id.code_prefix_start', '=', '564')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_expense_finance' />
+        <field name="sequence" eval="1027" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_profit_finance"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">E. DOBITAK IZ FINANSIRANJA</field>
+        <field name="code">AOP1048</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field
+                name="formulas"
+            >AOP1032 - AOP1040 if AOP1032 - AOP1040 > 0 else 0.0</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1028" />
+        <field name="level" eval="0" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_loss_finance"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">Ž. GUBITAK IZ FINANSIRANJA</field>
+        <field name="code">AOP1049</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field
+                name="formulas"
+            >abs(AOP1032 - AOP1040) if AOP1032 - AOP1040 &lt; 0 else 0.0</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1029" />
+        <field name="level" eval="0" />
+    </record>
+
+    <record id="l10n_rs_report_line_683" model="account.financial.html.report.line">
+        <field
+                name="name"
+            >Z. 683 i 685 PRIHODI OD USKLAĐIVANJA VREDNOSTI OSTALE IMOVINE KOJA SE ISKAZUJE PO FER VREDNOSTI KROZ BILANS USPEHA</field>
+        <field name="code">AOP1050</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="['|', ('account_id.group_id.code_prefix_start', '=', '683'), ('account_id.group_id.code_prefix_start', '=', '685')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field name="sequence" eval="1030" />
+        <field name="level" eval="0" />
+    </record>
+
+    <record id="l10n_rs_report_line_583" model="account.financial.html.report.line">
+        <field
+                name="name"
+            >I. 583 i 585 RASHODI OD USKLAĐIVANJA VREDNOSTI OSTALE IMOVINE KOJA SE ISKAZUJE PO FER VREDNOSTI KROZ BILANS USPEHA</field>
+        <field name="code">AOP1051</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="['|', ('account_id.group_id.code_prefix_start', '=', '583'), ('account_id.group_id.code_prefix_start', '=', '585')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field name="sequence" eval="1031" />
+        <field name="level" eval="1" />
+    </record>
+
+    <record id="l10n_rs_report_line_67" model="account.financial.html.report.line">
+        <field name="name">J. 67 i 68, osim 683 i 685 OSTALI PRIHODI</field>
+        <field name="code">AOP1052</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '670'), ('account_id.group_id.code_prefix_start', '=', '671'), ('account_id.group_id.code_prefix_start', '=', '672'), ('account_id.group_id.code_prefix_start', '=', '673'), ('account_id.group_id.code_prefix_start', '=', '674'), ('account_id.group_id.code_prefix_start', '=', '675'), ('account_id.group_id.code_prefix_start', '=', '676'), ('account_id.group_id.code_prefix_start', '=', '677'), ('account_id.group_id.code_prefix_start', '=', '678'), ('account_id.group_id.code_prefix_start', '=', '679'), ('account_id.group_id.code_prefix_start', '=', '680'), ('account_id.group_id.code_prefix_start', '=', '681'), ('account_id.group_id.code_prefix_start', '=', '682'), ('account_id.group_id.code_prefix_start', '=', '684'), ('account_id.group_id.code_prefix_start', '=', '689')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field name="sequence" eval="1032" />
+        <field name="level" eval="1" />
+    </record>
+
+    <record id="l10n_rs_report_line_57" model="account.financial.html.report.line">
+        <field name="name">K. 57 i 58, osim 583 i 585 OSTALI RASHODI</field>
+        <field name="code">AOP1053</field>
+        <field name="formulas">sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '570'), ('account_id.group_id.code_prefix_start', '=', '571'), ('account_id.group_id.code_prefix_start', '=', '572'), ('account_id.group_id.code_prefix_start', '=', '573'), ('account_id.group_id.code_prefix_start', '=', '574'), ('account_id.group_id.code_prefix_start', '=', '575'), ('account_id.group_id.code_prefix_start', '=', '576'), ('account_id.group_id.code_prefix_start', '=', '577'), ('account_id.group_id.code_prefix_start', '=', '579'), ('account_id.group_id.code_prefix_start', '=', '580'), ('account_id.group_id.code_prefix_start', '=', '581'), ('account_id.group_id.code_prefix_start', '=', '582'), ('account_id.group_id.code_prefix_start', '=', '584'), ('account_id.group_id.code_prefix_start', '=', '589')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field name="sequence" eval="1033" />
+        <field name="level" eval="1" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_profit_business_no_tax"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">L. DOBITAK IZ REDOVNOG POSLOVANJA PRE OPOREZIVANJA</field>
+        <field name="code">AOP1054</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field
+                name="formulas"
+            >AOP1030 - AOP1031 + AOP1048 - AOP1049 + AOP1050 - AOP1051 + AOP1052 - AOP1053 if AOP1030 - AOP1031 + AOP1048 - AOP1049 + AOP1050 - AOP1051 + AOP1052 - AOP1053 > 0 else 0.0</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1034" />
+        <field name="level" eval="0" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_loss_business_no_tax"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">Lj. GUBITAK IZ REDOVNOG POSLOVANJA PRE OPOREZIVANJA</field>
+        <field name="code">AOP1055</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field
+                name="formulas"
+            >AOP1031 - AOP1030 + AOP1049 - AOP1048 + AOP1051 - AOP1050 + AOP1053 - AOP1052 if AOP1031 - AOP1030 + AOP1049 - AOP1048 + AOP1051 - AOP1050 + AOP1053 - AOP1052 > 0 else 0.0</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1035" />
+        <field name="level" eval="1" />
+    </record>
+
+    <record id="l10n_rs_report_line_69_59" model="account.financial.html.report.line">
+        <field
+                name="name"
+            >M. 69-59 NETO DOBITAK POSLOVANJA KOJE SE OBUSTAVLJA, EFEKTI PROMENE RAČUNOVODSTVENE POLITIKE I ISPRAVKA GREŠAKA IZ RANIJIH PERIODA</field>
+        <field name="code">AOP1056</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field
+                name="formulas"
+            >AOP1071 - AOP1070 if AOP1071 - AOP1070 > 0 else 0.0</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1036" />
+        <field name="level" eval="1" />
+    </record>
+
+    <record id="l10n_rs_report_line_69" model="account.financial.html.report.line">
+        <field name="name">(69) DOBITAK POSLOVANJA KOJE SE OBUSTAVLJA</field>
+        <field name="code">AOP1071</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '690'), ('account_id.group_id.code_prefix_start', '=', '691'), ('account_id.group_id.code_prefix_start', '=', '692'), ('account_id.group_id.code_prefix_start', '=', '699')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_69_59' />
+        <field name="sequence" eval="1037" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record id="l10n_rs_report_line_59_69" model="account.financial.html.report.line">
+        <field
+                name="name"
+            >N. 59-69 NETO GUBITAK POSLOVANJA KOJE SE OBUSTAVLJA, RASHODI PROMENE RAČUNOVODSTVENE POLITIKE I ISPRAVKA GREŠAKA IZ RANIJIH PERIODA</field>
+        <field name="code">AOP1057</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field
+                name="formulas"
+            >AOP1070 - AOP1071 if AOP1070 - AOP1071 > 0 else 0.0</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1038" />
+        <field name="level" eval="1" />
+    </record>
+
+    <record id="l10n_rs_report_line_59" model="account.financial.html.report.line">
+        <field name="name">(59) GUBITAK POSLOVANJA KOJE SE OBUSTAVLJA</field>
+        <field name="code">AOP1070</field>
+        <field name="formulas">sum</field>
+        <field
+                name="domain"
+                eval="['|', '|', '|', ('account_id.group_id.code_prefix_start', '=', '590'), ('account_id.group_id.code_prefix_start', '=', '591'), ('account_id.group_id.code_prefix_start', '=', '592'), ('account_id.group_id.code_prefix_start', '=', '599')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="parent_id" ref='l10n_rs_report_line_59_69' />
+        <field name="sequence" eval="1039" />
+        <field name="level" eval="2" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_profit_no_tax"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">Nj. DOBITAK PRE OPOREZIVANJA</field>
+        <field name="code">AOP1058</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field
+                name="formulas"
+            >AOP1054 - AOP1055 + AOP1056 - AOP1057 if AOP1054 - AOP1055 + AOP1056 - AOP1057 > 0 else 0.0</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1040" />
+        <field name="level" eval="0" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_loss_no_tax"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">O. GUBITAK PRE OPOREZIVANJA</field>
+        <field name="code">AOP1059</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field
+                name="formulas"
+            >abs(AOP1054 - AOP1055 + AOP1056 - AOP1057) if AOP1054 - AOP1055 + AOP1056 - AOP1057 &lt; 0 else 0.0</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1059" />
+        <field name="level" eval="1" />
+    </record>
+
+    <record id="l10n_rs_report_line_721" model="account.financial.html.report.line">
+        <field name="name">P. 721 PORESKI PERIOD RASHODA</field>
+        <field name="code">AOP1060</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field name="formulas">AOP1058 * 0.15</field>
+        <field name="groupby">account_id</field>
+        <field name="sequence" eval="1060" />
+        <field name="level" eval="1" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_722_expense"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">deo 722 ODLOŽENI PORESKI RASHODI PERIODA</field>
+        <field name="code">AOP1061</field>
+        <field name="formulas">sum</field>
+        <field name="domain" eval="[('account_id.code', '=', '7220')]" />
+        <field name="groupby">account_id</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field name="sequence" eval="1061" />
+        <field name="level" eval="1" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_722_income"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">deo 722 ODLOŽENI PORESKI PRIHODI PERIODA</field>
+        <field name="code">AOP1062</field>
+        <field name="formulas">-sum</field>
+        <field name="domain" eval="[('account_id.code', '=', '7221')]" />
+        <field name="groupby">account_id</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field name="sequence" eval="1062" />
+        <field name="level" eval="1" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_income_personal"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">R. ISPLAĆENA LIČNA PRIMANJA POSLODAVCA</field>
+        <field name="code">AOP1063</field>
+        <field name="formulas">-sum</field>
+        <field
+                name="domain"
+                eval="[('account_id.group_id.code_prefix_start', '=', '723')]"
+            />
+        <field name="groupby">account_id</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field name="sequence" eval="1063" />
+        <field name="level" eval="1" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_net_profit"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">S. NETO DOBITAK</field>
+        <field name="code">AOP1064</field>
+        <field
+                name="formulas"
+            >AOP1058 - AOP1059 - AOP1060 - AOP1061 + AOP1062 - AOP1063 if AOP1058 - AOP1059 - AOP1060 - AOP1061 + AOP1062 - AOP1063 > 0 else 0.0</field>
+        <field name="groupby">account_id</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field name="sequence" eval="1064" />
+        <field name="level" eval="0" />
+    </record>
+
+    <record
+            id="l10n_rs_report_line_net_loss"
+            model="account.financial.html.report.line"
+        >
+        <field name="name">T. NETO GUBITAK</field>
+        <field name="code">AOP1065</field>
+        <field
+                name="formulas"
+            >abs(AOP1058 - AOP1059 - AOP1060 - AOP1061 + AOP1062 - AOP1063) if AOP1058 - AOP1059 - AOP1060 - AOP1061 + AOP1062 - AOP1063 &lt; 0 else 0.0</field>
+        <field name="groupby">account_id</field>
+        <field name="financial_report_id" ref="l10n_rs_profit_and_loss" />
+        <field name="sequence" eval="1065" />
+        <field name="level" eval="0" />
+    </record>
+
+    </data>
+</odoo>

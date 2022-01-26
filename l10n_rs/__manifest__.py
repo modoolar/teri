@@ -1,0 +1,37 @@
+# Copyright (C) 2021 Modoolar <http://www.modoolar.com>
+# @author Dejan Mirosavljevic <dejan.mirosavljevic@modoolar.com>
+# License LGPLv3.0 or later (https://www.gnu.org/licenses/lgpl-3.0.en.html).
+{
+    "name": "Serbian Accounting",
+    "summary": "Serbian Chart of Accounts",
+    "version": "15.0.0.0.1",
+    "license": "LGPL-3",
+    "author": "Modoolar",
+    "category": "Accounting/Localizations/Account Charts",
+    "depends": ["account"],
+    "data": [
+        "security/ir.model.access.csv",
+        "data/product_sequence.xml",
+        "data/account_chart_template_data.xml",
+        "data/account_tags.xml",
+        "data/account_groups.xml",
+        "data/account.account.template.csv",
+        "data/l10n_rs_chart_data.xml",
+        "data/account_data.xml",
+        "data/res_country_data.xml",
+        "data/product_type_data.xml",
+        "data/product_category_data.xml",
+        "data/account_tax_fiscal_position_data.xml",
+        "data/account_fiscal_position_data.xml",
+        "data/product_data.xml",
+        "data/account_chart_template_configure_data.xml",
+        "views/product_template_views.xml",
+        "views/product_type_view.xml",
+        "views/res_partner_views.xml",
+        "views/account_journal_views.xml",
+        "views/product_category_views.xml",
+        "views/res_config_settings_views.xml",
+    ],
+    "installable": True,
+    "post_init_hook": "_setup_product_sequence",
+}

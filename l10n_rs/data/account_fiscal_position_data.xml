@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="0">
+        <!-- Fiscal Position Templates -->
+        <record
+            id="fiscal_position_template_0"
+            model="account.fiscal.position.template"
+        >
+            <field name="name">Domestic trade</field>
+            <field name="auto_apply" eval="True" />
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="country_id" ref="base.rs" />
+        </record>
+        <record
+            id="fiscal_position_template_1"
+            model="account.fiscal.position.template"
+        >
+            <field name="name">Domestic trade - tax exempt</field>
+<!--            <field name="auto_apply" eval="False" />-->
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="country_id" ref="base.rs" />
+        </record>
+        <record
+            id="fiscal_position_template_2"
+            model="account.fiscal.position.template"
+        >
+            <field name="name">International trade</field>
+            <field name="auto_apply" eval="True" />
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="country_group_id" ref="l10n_rs.outside_rs" />
+        </record>
+        <!-- Fiscal Position Tax Templates -->
+        <record
+            id="fiscal_position_1_tax_template_sale_20"
+            model="account.fiscal.position.tax.template"
+        >
+            <field name="position_id" ref="fiscal_position_template_1" />
+            <field name="tax_src_id" ref="tax_rs_sale_pdv20" />
+            <field name="tax_dest_id" ref="tax_rs_sale_pdv0" />
+        </record>
+        <record
+            id="fiscal_position_1_tax_template_sale_10"
+            model="account.fiscal.position.tax.template"
+        >
+            <field name="position_id" ref="fiscal_position_template_1" />
+            <field name="tax_src_id" ref="tax_rs_sale_pdv10" />
+            <field name="tax_dest_id" ref="tax_rs_sale_pdv0" />
+        </record>
+        <record
+            id="fiscal_position_2_tax_template_sale_20"
+            model="account.fiscal.position.tax.template"
+        >
+            <field name="position_id" ref="fiscal_position_template_2" />
+            <field name="tax_src_id" ref="tax_rs_sale_pdv20" />
+            <field name="tax_dest_id" ref="tax_rs_sale_pdv0" />
+        </record>
+        <record
+            id="fiscal_position_2_tax_template_sale_10"
+            model="account.fiscal.position.tax.template"
+        >
+            <field name="position_id" ref="fiscal_position_template_2" />
+            <field name="tax_src_id" ref="tax_rs_sale_pdv10" />
+            <field name="tax_dest_id" ref="tax_rs_sale_pdv0" />
+        </record>
+        <!-- Fiscal Position Account Templates -->
+        <record id="fpat_6040_6050" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_template_2" />
+            <field name="account_src_id" ref="account_rs_6040" />
+            <field name="account_dest_id" ref="account_rs_6050" />
+        </record>
+        <record id="fpat_6140_6150" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_template_2" />
+            <field name="account_src_id" ref="account_rs_6140" />
+            <field name="account_dest_id" ref="account_rs_6150" />
+        </record>
+        <record id="fpat_6142_6152" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_template_2" />
+            <field name="account_src_id" ref="account_rs_6142" />
+            <field name="account_dest_id" ref="account_rs_6152" />
+        </record>
+    </data>
+</odoo>

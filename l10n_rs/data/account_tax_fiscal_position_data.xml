@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="0">
+        <record id="tax_rs_sale_pdv20" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">PDV 20%</field>
+            <field name="description">PDV 20%</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">20</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="tax_group_rs_pdv20" />
+            <field
+                name="invoice_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_4700'),
+                }),
+            ]"
+            />
+            <field
+                name="refund_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_4700'),
+                }),
+            ]"
+            />
+        </record>
+        <record id="tax_rs_sale_pdv20_advance" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">PDV 20% avans</field>
+            <field name="description">PDV 20% avans</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">20</field>
+            <field name="type_tax_use">sale</field>
+            <field name="price_include">True</field>
+            <field name="tax_group_id" ref="tax_group_rs_pdv20_advance" />
+            <field
+                name="invoice_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_4720'),
+                }),
+            ]"
+            />
+            <field
+                name="refund_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_4720'),
+                }),
+            ]"
+            />
+        </record>
+        <record id="tax_rs_sale_pdv10" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">PDV 10%</field>
+            <field name="description">PDV 10%</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">10</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="tax_group_rs_pdv10" />
+            <field
+                name="invoice_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_4710'),
+                }),
+            ]"
+            />
+            <field
+                name="refund_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_4710'),
+                }),
+            ]"
+            />
+        </record>
+        <record id="tax_rs_sale_pdv10_advance" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">PDV 10% avans</field>
+            <field name="description">PDV 10% avans</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">10</field>
+            <field name="type_tax_use">sale</field>
+            <field name="price_include">True</field>
+            <field name="tax_group_id" ref="tax_group_rs_pdv10_advance" />
+            <field
+                name="invoice_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_4730'),
+                }),
+            ]"
+            />
+            <field
+                name="refund_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_4730'),
+                }),
+            ]"
+            />
+        </record>
+        <record id="tax_rs_sale_pdv0" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">PDV 0%</field>
+            <field name="description">PDV 0%</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="tax_group_rs_pdv0" />
+        </record>
+        <record id="tax_rs_purchase_pdv20" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">PDV 20%</field>
+            <field name="description">PDV 20%</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">20</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_rs_pdv20" />
+            <field
+                name="invoice_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_2700'),
+                }),
+            ]"
+            />
+            <field
+                name="refund_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_2700'),
+                }),
+            ]"
+            />
+        </record>
+        <record id="tax_rs_purchase_pdv20_non_deductible" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">PDV 20% Non Deductible</field>
+            <field name="description">PDV 20% Non Deductible</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">20</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_rs_pdv20" />
+        </record>
+        <record id="tax_rs_purchase_pdv20_advance" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">PDV 20% avans</field>
+            <field name="description">PDV 20% avans</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">20</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_rs_pdv20_advance" />
+            <field
+                name="invoice_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_2720'),
+                }),
+            ]"
+            />
+            <field
+                name="refund_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_2720'),
+                }),
+            ]"
+            />
+        </record>
+        <record id="tax_rs_purchase_pdv20_import" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">PDV 20% uvoz</field>
+            <field name="description">PDV 20% uvoz</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">20</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_rs_pdv20" />
+            <field
+                name="invoice_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_2740'),
+                }),
+            ]"
+            />
+            <field
+                name="refund_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_2740'),
+                }),
+            ]"
+            />
+        </record>
+        <record id="tax_rs_purchase_pdv10" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">PDV 10%</field>
+            <field name="description">PDV 10%</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">10</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_rs_pdv10" />
+            <field
+                name="invoice_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_2710'),
+                }),
+            ]"
+            />
+            <field
+                name="refund_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_2710'),
+                }),
+            ]"
+            />
+        </record>
+        <record id="tax_rs_purchase_pdv10_non_deductible" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">PDV 10% Non Deductible</field>
+            <field name="description">PDV 10% Non Deductible</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">10</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_rs_pdv10" />
+        </record>
+        <record id="tax_rs_purchase_pdv10_advance" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">PDV 10% avans</field>
+            <field name="description">PDV 10% avans</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">10</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_rs_pdv10_advance" />
+            <field
+                name="invoice_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_2730'),
+                }),
+            ]"
+            />
+            <field
+                name="refund_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_2730'),
+                }),
+            ]"
+            />
+        </record>
+        <record id="tax_rs_purchase_pdv10_import" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">PDV 10% uvoz</field>
+            <field name="description">PDV 10% uvoz</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">10</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_rs_pdv10" />
+            <field
+                name="invoice_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_2750'),
+                }),
+            ]"
+            />
+            <field
+                name="refund_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_2750'),
+                }),
+            ]"
+            />
+        </record>
+
+        <record id="tax_rs_purchase_pdv0" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">PDV 0%</field>
+            <field name="description">PDV 0%</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_rs_pdv0" />
+        </record>
+
+        <record
+            id="tax_rs_purchase_internal_calculation_sales"
+            model="account.tax.template"
+        >
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">Interni obracun sales</field>
+            <field name="description">-20%</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">-20</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="l10n_rs.tax_group_rs_taxes" />
+            <field
+                name="invoice_repartition_line_ids"
+                eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('account_rs_4700'),
+                }),
+            ]"
+            />
+        </record>
+
+        <record id="tax_rs_purchase_internal_calculation" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">Interni obracun</field>
+            <field name="description">Interni obracun</field>
+            <field name="amount_type">group</field>
+            <field name="type_tax_use">purchase</field>
+            <field
+                name="children_tax_ids"
+                eval="[(6,0,[ref('tax_rs_purchase_pdv20'), ref('tax_rs_purchase_internal_calculation_sales')])]"
+            />
+            <field name="tax_group_id" ref="l10n_rs.tax_group_rs_taxes" />
+        </record>
+
+        <record
+            id="tax_rs_purchase_internal_calculation_non_deductible"
+            model="account.tax.template"
+        >
+            <field name="chart_template_id" ref="l10n_rs_chart_template" />
+            <field name="name">Interni obracun non deductible</field>
+            <field name="description">Interni obracun non deductible</field>
+            <field name="amount_type">group</field>
+            <field name="type_tax_use">purchase</field>
+            <field
+                name="children_tax_ids"
+                eval="[(6,0,[ref('tax_rs_purchase_pdv20_non_deductible'), ref('tax_rs_purchase_internal_calculation_sales')])]"
+            />
+            <field name="tax_group_id" ref="l10n_rs.tax_group_rs_taxes" />
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="product_category_form_view" model="ir.ui.view">
+        <field name="name">product.category.form.view</field>
+        <field name="model">product.category</field>
+        <field name="inherit_id" ref="product.product_category_form_view" />
+        <field name="arch" type="xml">
+            <sheet position="before">
+                <field name="income_account_check" invisible="True" />
+                <field name="expense_account_check" invisible="True" />
+                <div
+                    class="alert alert-warning"
+                    role="alert"
+                    attrs="{'invisible': [('income_account_check', '=', True)]}"
+                >
+                  Wrong account configuration. You need to select Income account configured in the settings.
+                </div>
+                <div
+                    class="alert alert-warning"
+                    role="alert"
+                    attrs="{'invisible': [('expense_account_check', '=', True)]}"
+                >
+                  Wrong account configuration. You need to select Expense account configured in the settings.
+                </div>
+            </sheet>
+            <field name="property_account_income_categ_id" position="before">
+                <field name="preferred_product_type" widget="many2many_tags" />
+            </field>
+        </field>
+    </record>
+</odoo>

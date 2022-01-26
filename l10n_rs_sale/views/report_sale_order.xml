@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template
+        id="l10n_rs_report_saleorder_document_inherit"
+        inherit_id="sale.report_saleorder_document"
+    >
+        <xpath expr="//t[@t-set='doc']" position="after">
+            <t t-set="o" t-value="" />
+        </xpath>
+        <xpath expr="//div[@name='expiration_date']" position="after">
+            <div t-if="doc.advance_payment_date" class="col-auto col-3 mw-100 mb-2">
+                <strong>Advance Payment Date:</strong>
+                <p class="m-0" t-field="doc.advance_payment_date" />
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

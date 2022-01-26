@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_vat_legislation_mention_group_user,vat.legislation.mention.group.user,model_vat_legislation_mention,base.group_user,1,0,0,0
+access_vat_legislation_mention_group_account_billing,vat.legislation.mention.group.account.invoice,model_vat_legislation_mention,account.group_account_invoice,1,1,1,1

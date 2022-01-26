@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="vat_legislation_mention_tree_view" model="ir.ui.view">
+            <field name="name">vat.legislation.mention.tree.view</field>
+            <field name="model">vat.legislation.mention</field>
+            <field name="arch" type="xml">
+                <tree string="VAT Legislation Mention">
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+        <record id="vat_legislation_mention_form_view" model="ir.ui.view">
+            <field name="name">vat.legislation.mention.form.view</field>
+            <field name="model">vat.legislation.mention</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="action_vat_legislation_mention" model="ir.actions.act_window">
+            <field name="name">VAT Legislation Mention</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vat.legislation.mention</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="l10n_product_type_product" model="product.type">
+            <field name="name">Storable</field>
+            <field name="product_type">product</field>
+        </record>
+    </data>
+</odoo>

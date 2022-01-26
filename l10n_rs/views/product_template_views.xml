@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="product_template_form_view" model="ir.ui.view">
+        <field name="name">product.template.form.view</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view" />
+        <field name="arch" type="xml">
+            <sheet position="before">
+                <field name="preferred_type_check" invisible="True" />
+                <div
+                    class="alert alert-warning"
+                    role="alert"
+                    attrs="{'invisible': [('preferred_type_check', '=', True)]}"
+                >
+                  Wrong product configuration. Please match product category preferred type and product type.
+                </div>
+            </sheet>
+        </field>
+    </record>
+</odoo>

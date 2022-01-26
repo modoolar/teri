@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="menu_action_vat_legislation_mention"
+        action="l10n_rs_account.action_vat_legislation_mention"
+        parent="account.account_account_menu"
+    />
+</odoo>

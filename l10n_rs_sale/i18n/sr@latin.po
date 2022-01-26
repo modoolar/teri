@@ -1,0 +1,146 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_rs_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-26 12:40+0000\n"
+"PO-Revision-Date: 2022-01-26 12:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_rs_sale
+#: model_terms:ir.ui.view,arch_db:l10n_rs_sale.l10n_rs_report_invoice_document_inherit
+msgid "<span>Date</span>"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model_terms:ir.ui.view,arch_db:l10n_rs_sale.l10n_rs_report_invoice_document_inherit
+msgid "<span>Description</span>"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model_terms:ir.ui.view,arch_db:l10n_rs_sale.l10n_rs_report_invoice_document_inherit
+msgid "<span>Down payments deducted from the invoice</span>"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model_terms:ir.ui.view,arch_db:l10n_rs_sale.l10n_rs_report_invoice_document_inherit
+msgid "<span>Quantity</span>"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model_terms:ir.ui.view,arch_db:l10n_rs_sale.l10n_rs_report_invoice_document_inherit
+msgid "<span>Taxes</span>"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model_terms:ir.ui.view,arch_db:l10n_rs_sale.l10n_rs_report_saleorder_document_inherit
+msgid "<strong>Advance Payment Date:</strong>"
+msgstr "<strong>Datum prijema avansa:</strong>"
+
+#. module: l10n_rs_sale
+#: model_terms:ir.ui.view,arch_db:l10n_rs_sale.l10n_rs_report_invoice_document_inherit
+msgid "<strong>Amount</strong>"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model_terms:ir.ui.view,arch_db:l10n_rs_sale.l10n_rs_report_invoice_document_inherit
+msgid "<strong>Base</strong>"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model_terms:ir.ui.view,arch_db:l10n_rs_sale.l10n_rs_report_invoice_document_inherit
+msgid "<strong>Subtotal</strong>"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model_terms:ir.ui.view,arch_db:l10n_rs_sale.l10n_rs_report_invoice_document_inherit
+msgid "<strong>Tax</strong>"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model_terms:ir.ui.view,arch_db:l10n_rs_sale.l10n_rs_report_invoice_document_inherit
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model:ir.model,name:l10n_rs_sale.model_account_chart_template
+msgid "Account Chart Template"
+msgstr "Kontni okvir"
+
+#. module: l10n_rs_sale
+#: model:ir.model.fields,field_description:l10n_rs_sale.field_sale_order__advance_payment_date
+msgid "Advance payment date"
+msgstr "Datum prijema avansa"
+
+#. module: l10n_rs_sale
+#: model_terms:ir.ui.view,arch_db:l10n_rs_sale.l10n_rs_report_invoice_document_inherit
+msgid "Amount"
+msgstr "Iznos"
+
+#. module: l10n_rs_sale
+#: model:ir.model.fields,help:l10n_rs_sale.field_account_bank_statement_import_journal_creation__downpayment_sequence
+#: model:ir.model.fields,help:l10n_rs_sale.field_account_journal__downpayment_sequence
+msgid ""
+"Check this box if you want to set different sequence on down payments made "
+"from this journal"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model:ir.model.fields,field_description:l10n_rs_sale.field_account_bank_statement_import_journal_creation__downpayment_sequence
+#: model:ir.model.fields,field_description:l10n_rs_sale.field_account_journal__downpayment_sequence
+msgid "Dedicated Down Payment Sequence"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model:ir.model.fields,field_description:l10n_rs_sale.field_account_bank_statement_line__is_downpayment
+#: model:ir.model.fields,field_description:l10n_rs_sale.field_account_move__is_downpayment
+#: model:ir.model.fields,field_description:l10n_rs_sale.field_account_payment__is_downpayment
+msgid "Down Payment"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model:ir.model,name:l10n_rs_sale.model_account_journal
+msgid "Journal"
+msgstr "Dnevnik"
+
+#. module: l10n_rs_sale
+#: model:ir.model,name:l10n_rs_sale.model_account_move
+msgid "Journal Entry"
+msgstr "Sadrzaj dnevnika"
+
+#. module: l10n_rs_sale
+#: model:ir.model,name:l10n_rs_sale.model_sale_order
+msgid "Sales Order"
+msgstr "Prodajni Nalog"
+
+#. module: l10n_rs_sale
+#: model_terms:ir.ui.view,arch_db:l10n_rs_sale.l10n_rs_report_invoice_document_inherit
+msgid "Total Price"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model_terms:ir.ui.view,arch_db:l10n_rs_sale.l10n_rs_document_tax_totals
+msgid "Total per offer"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model:ir.model.fields,field_description:l10n_rs_sale.field_account_bank_statement_line__amount_total_no_downpayemnt
+#: model:ir.model.fields,field_description:l10n_rs_sale.field_account_move__amount_total_no_downpayemnt
+#: model:ir.model.fields,field_description:l10n_rs_sale.field_account_payment__amount_total_no_downpayemnt
+msgid "Total without down payments"
+msgstr ""
+
+#. module: l10n_rs_sale
+#: model:ir.model.fields,field_description:l10n_rs_sale.field_account_bank_statement_line__amount_untaxed_no_downpayemnt
+#: model:ir.model.fields,field_description:l10n_rs_sale.field_account_move__amount_untaxed_no_downpayemnt
+#: model:ir.model.fields,field_description:l10n_rs_sale.field_account_payment__amount_untaxed_no_downpayemnt
+msgid "Untaxed Amount without down payments"
+msgstr ""

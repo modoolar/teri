@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="outside_rs" model="res.country.group">
+            <field name="name">Outside RS</field>
+            <field
+                name="country_ids"
+                eval="[(6,0,[
+                ref('base.ad'),ref('base.ae'),ref('base.al'),ref('base.at'),ref('base.au'),ref('base.ax'),ref('base.ba'),ref('base.be'),ref('base.bg'),
+                ref('base.bl'),ref('base.ch'),ref('base.cy'),ref('base.cz'),ref('base.de'),
+                ref('base.dk'),ref('base.ee'),ref('base.es'),ref('base.fi'),ref('base.fr'),
+                ref('base.uk'),ref('base.gf'),ref('base.gg'),ref('base.gi'),ref('base.gp'),
+                ref('base.gr'),ref('base.hr'),ref('base.hu'),ref('base.ie'),ref('base.im'),
+                ref('base.is'),ref('base.it'),ref('base.je'),ref('base.li'),ref('base.lt'),
+                ref('base.lu'),ref('base.lv'),ref('base.mc'),ref('base.me'),ref('base.mf'),ref('base.mk'),ref('base.mq'),
+                ref('base.mt'),ref('base.nl'),ref('base.no'),ref('base.pl'),ref('base.pm'),
+                ref('base.pt'),ref('base.re'),ref('base.ro'),ref('base.ru'),ref('base.se'),ref('base.si'),ref('base.sl'),
+                ref('base.sk'),ref('base.sm'),ref('base.us'),ref('base.va'),ref('base.yt')])]"
+            />
+        </record>
+    </data>
+</odoo>

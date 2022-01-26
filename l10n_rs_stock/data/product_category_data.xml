@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="0">
+        <record id="l10n_rs.product_category_goods" model="product.category">
+            <field
+                name="preferred_product_type"
+                eval="[(6, 0, [ref('l10n_rs.l10n_product_type_consu'), ref('l10n_rs_stock.l10n_product_type_product')])]"
+            />
+        </record>
+        <record id="l10n_rs.product_category_material" model="product.category">
+            <field
+                name="preferred_product_type"
+                eval="[(6, 0, [ref('l10n_rs.l10n_product_type_consu'), ref('l10n_rs_stock.l10n_product_type_product')])]"
+            />
+        </record>
+        <record
+            id="l10n_rs.product_category_semi_finished_products"
+            model="product.category"
+        >
+            <field
+                name="preferred_product_type"
+                eval="[(6, 0, [ref('l10n_rs.l10n_product_type_consu'), ref('l10n_rs_stock.l10n_product_type_product')])]"
+            />
+        </record>
+        <record id="l10n_rs.product_category_package" model="product.category">
+            <field
+                name="preferred_product_type"
+                eval="[(6, 0, [ref('l10n_rs.l10n_product_type_consu'), ref('l10n_rs_stock.l10n_product_type_product')])]"
+            />
+        </record>
+    </data>
+</odoo>

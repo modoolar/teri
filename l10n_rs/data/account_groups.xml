@@ -1,0 +1,2312 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="account_group_rs_000" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">000</field>
+            <field name="name">Upisane a neuplaćene akcije</field>
+        </record>
+        <record id="account_group_rs_001" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">001</field>
+            <field name="name">Upisani a neuplaćeni udeli i ulozi</field>
+        </record>
+        <record id="account_group_rs_010" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">010</field>
+            <field name="name">Ulaganja u razvoj</field>
+        </record>
+        <record id="account_group_rs_011" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">011</field>
+            <field
+                name="name"
+            >Koncesije, patenti, licence, robne i uslužne marke</field>
+        </record>
+        <record id="account_group_rs_012" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">012</field>
+            <field name="name">Softver i ostala prava</field>
+        </record>
+        <record id="account_group_rs_013" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">013</field>
+            <field name="name">Gudvil</field>
+        </record>
+        <record id="account_group_rs_014" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">014</field>
+            <field name="name">Ostala nematerijalna imovina</field>
+        </record>
+        <record id="account_group_rs_015" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">015</field>
+            <field name="name">Nematerijalna imovina u pripremi</field>
+        </record>
+        <record id="account_group_rs_016" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">016</field>
+            <field name="name">Avansi za nematerijalnu imovinu</field>
+        </record>
+        <record id="account_group_rs_019" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">019</field>
+            <field name="name">Ispravka vrednosti nematerijalne imovine</field>
+        </record>
+        <record id="account_group_rs_020" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">020</field>
+            <field name="name">Poljoprivredno i ostalo zemljište</field>
+        </record>
+        <record id="account_group_rs_021" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">021</field>
+            <field name="name">Građevinsko zemljište</field>
+        </record>
+        <record id="account_group_rs_022" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">022</field>
+            <field name="name">Građevinski objekti</field>
+        </record>
+        <record id="account_group_rs_023" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">023</field>
+            <field name="name">Postrojenja i oprema</field>
+        </record>
+        <record id="account_group_rs_024" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">024</field>
+            <field name="name">Investicione nekretnine</field>
+        </record>
+        <record id="account_group_rs_025" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">025</field>
+            <field name="name">Ostale nekretnine, postrojenja i oprema</field>
+        </record>
+        <record id="account_group_rs_026" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">026</field>
+            <field name="name">Nekretnine, postrojenja i oprema u pripremi</field>
+        </record>
+        <record id="account_group_rs_027" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">027</field>
+            <field
+                name="name"
+            >Ulaganja na tuđim nekretninama, postrojenjima i opremi</field>
+        </record>
+        <record id="account_group_rs_028" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">028</field>
+            <field name="name">Avansi za nekretnine, postrojenja i opremu</field>
+        </record>
+        <record id="account_group_rs_029" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">029</field>
+            <field
+                name="name"
+            >Ispravka vrednosti nekretnina, postrojenja i opreme</field>
+        </record>
+        <record id="account_group_rs_030" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">030</field>
+            <field name="name">Šume</field>
+        </record>
+        <record id="account_group_rs_031" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">031</field>
+            <field name="name">Višegodišnji zasadi</field>
+        </record>
+        <record id="account_group_rs_032" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">032</field>
+            <field name="name">Osnovno stado</field>
+        </record>
+        <record id="account_group_rs_037" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">037</field>
+            <field name="name">Biološka sredstva u pripremi</field>
+        </record>
+        <record id="account_group_rs_038" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">038</field>
+            <field name="name">Avansi za biološka sredstva</field>
+        </record>
+        <record id="account_group_rs_039" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">039</field>
+            <field name="name">Ispravka vrednosti bioloških sredstava</field>
+        </record>
+        <record id="account_group_rs_040" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">040</field>
+            <field name="name">Učešća u kapitalu zavisnih pravnih lica</field>
+        </record>
+        <record id="account_group_rs_041" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">041</field>
+            <field
+                name="name"
+            >Učešća u kapitalu pridruženih pravnih lica i zajedničkim poduhvatima</field>
+        </record>
+        <record id="account_group_rs_042" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">042</field>
+            <field
+                name="name"
+            >Učešća u kapitalu ostalih pravnih lica i druge hartije od vrednosti raspoložive za prodaju</field>
+        </record>
+        <record id="account_group_rs_043" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">043</field>
+            <field
+                name="name"
+            >Dugoročni plasmani matičnim, zavisnim i ostalim povezanim pravnim licima u zemlji</field>
+        </record>
+        <record id="account_group_rs_044" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">044</field>
+            <field
+                name="name"
+            >Dugoročni plasmani matičnim, zavisnim i ostalim povezanim pravnim licima u inostranstvu</field>
+        </record>
+        <record id="account_group_rs_045" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">045</field>
+            <field name="name">Dugoročni plasmani u zemlji i inostranstvu</field>
+        </record>
+        <record id="account_group_rs_046" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">046</field>
+            <field name="name">Hartije od vrednosti koje se drže do dospeća</field>
+        </record>
+        <record id="account_group_rs_047" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">047</field>
+            <field
+                name="name"
+            >Otkupljene sopstvene akcije i otkupljeni sopstveni udeli</field>
+        </record>
+        <record id="account_group_rs_048" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">048</field>
+            <field name="name">Ostali dugoročni finansijski plasmani</field>
+        </record>
+        <record id="account_group_rs_049" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">049</field>
+            <field
+                name="name"
+            >Ispravka vrednosti dugoročnih finansijskih plasmana</field>
+        </record>
+        <record id="account_group_rs_050" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">050</field>
+            <field name="name">Potraživanja od matičnih i zavisnih pravnih lica</field>
+        </record>
+        <record id="account_group_rs_051" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">051</field>
+            <field name="name">Potraživanja od ostalih povezanih lica</field>
+        </record>
+        <record id="account_group_rs_052" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">052</field>
+            <field name="name">Potraživanja po osnovu prodaje na robni kredit</field>
+        </record>
+        <record id="account_group_rs_053" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">053</field>
+            <field
+                name="name"
+            >Potraživanja za prodaju po ugovorima o finansijskom lizingu</field>
+        </record>
+        <record id="account_group_rs_054" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">054</field>
+            <field name="name">Potraživanja po osnovu jemstva</field>
+        </record>
+        <record id="account_group_rs_055" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">055</field>
+            <field name="name">Sporna i sumnjiva potraživanja</field>
+        </record>
+        <record id="account_group_rs_056" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">056</field>
+            <field name="name">Ostala dugoročna potraživanja</field>
+        </record>
+        <record id="account_group_rs_059" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">059</field>
+            <field name="name">Ispravka vrednosti dugoročnih potraživanja</field>
+        </record>
+        <record id="account_group_rs_100" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">100</field>
+            <field
+                name="name"
+            >Obračun nabavne vrednosti zaliha materijala, rezervnih delova, alata i inventara</field>
+        </record>
+        <record id="account_group_rs_101" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">101</field>
+            <field name="name">Materijal</field>
+        </record>
+        <record id="account_group_rs_102" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">102</field>
+            <field name="name">Rezervni delovi</field>
+        </record>
+        <record id="account_group_rs_103" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">103</field>
+            <field name="name">Alat i inventar</field>
+        </record>
+        <record id="account_group_rs_104" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">104</field>
+            <field
+                name="name"
+            >Materijal, rezervni delovi, alat i inventar u obradi, doradi i manipulaciji</field>
+        </record>
+        <record id="account_group_rs_109" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">109</field>
+            <field
+                name="name"
+            >Ispravka vrednosti materijala, rezervnih delova, alata i inventara</field>
+        </record>
+        <record id="account_group_rs_110" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">110</field>
+            <field name="name">Nedovršena proizvodnja</field>
+        </record>
+        <record id="account_group_rs_111" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">111</field>
+            <field name="name">Nedovršenje usluge</field>
+        </record>
+        <record id="account_group_rs_120" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">120</field>
+            <field name="name">Gotovi proizvodi u skladištu</field>
+        </record>
+        <record id="account_group_rs_130" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">130</field>
+            <field name="name">Obračun nabavke robe</field>
+        </record>
+        <record id="account_group_rs_131" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">131</field>
+            <field name="name">Roba u magacinu</field>
+        </record>
+        <record id="account_group_rs_132" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">132</field>
+            <field name="name">Roba u prometu na veliko</field>
+        </record>
+        <record id="account_group_rs_133" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">133</field>
+            <field
+                name="name"
+            >Roba u skladištu, stovarištu i prodavnicama kod drugih pravnih lica</field>
+        </record>
+        <record id="account_group_rs_134" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">134</field>
+            <field name="name">Roba u prometu na malo</field>
+        </record>
+        <record id="account_group_rs_135" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">135</field>
+            <field name="name">Roba u obradi, doradi i manipulaciji</field>
+        </record>
+        <record id="account_group_rs_136" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">136</field>
+            <field name="name">Roba u tranzitu</field>
+        </record>
+        <record id="account_group_rs_137" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">137</field>
+            <field name="name">Roba na putu</field>
+        </record>
+        <record id="account_group_rs_139" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">139</field>
+            <field name="name">Ispravka vrednosti robe</field>
+        </record>
+        <record id="account_group_rs_140" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">140</field>
+            <field name="name">Nematerijalna imovina namenjena prodaji</field>
+        </record>
+        <record id="account_group_rs_141" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">141</field>
+            <field name="name">Zemljište namenjeno prodaji</field>
+        </record>
+        <record id="account_group_rs_142" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">142</field>
+            <field name="name">Građevinski objekti namenjeni prodaji</field>
+        </record>
+        <record id="account_group_rs_143" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">143</field>
+            <field name="name">Investicione nekretnine namenjene prodaji</field>
+        </record>
+        <record id="account_group_rs_144" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">144</field>
+            <field name="name">Ostale nekretnine namenjene prodaji</field>
+        </record>
+        <record id="account_group_rs_145" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">145</field>
+            <field name="name">Postrojenja i oprema namenjena prodaji</field>
+        </record>
+        <record id="account_group_rs_146" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">146</field>
+            <field name="name">Biološka sredstva namenjena prodaji</field>
+        </record>
+        <record id="account_group_rs_147" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">147</field>
+            <field name="name">Sredstva poslovanja koje se obustavlja</field>
+        </record>
+        <record id="account_group_rs_149" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">149</field>
+            <field
+                name="name"
+            >Ispravka vrednosti stalnih sredstava i sredstava obustavljenog poslovanja namenjenih prodaji</field>
+        </record>
+        <record id="account_group_rs_150" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">150</field>
+            <field
+                name="name"
+            >Plaćeni avansi za materijal, rezervne delove i inventar u zemlji</field>
+        </record>
+        <record id="account_group_rs_151" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">151</field>
+            <field
+                name="name"
+            >Plaćeni avansi za materijal, rezervne delove i inventar u inostranstvu</field>
+        </record>
+        <record id="account_group_rs_152" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">152</field>
+            <field name="name">Plaćeni avansi za robu u zemlji</field>
+        </record>
+        <record id="account_group_rs_153" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">153</field>
+            <field name="name">Plaćeni avansi za robu u inostranstvu</field>
+        </record>
+        <record id="account_group_rs_154" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">154</field>
+            <field name="name">Plaćeni avansi za usluge u zemlji</field>
+        </record>
+        <record id="account_group_rs_155" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">155</field>
+            <field name="name">Plaćeni avansi za usluge u inostranstvu</field>
+        </record>
+        <record id="account_group_rs_159" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">159</field>
+            <field name="name">Ispravka vrednosti plaćenih avansa</field>
+        </record>
+        <record id="account_group_rs_200" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">200</field>
+            <field name="name">Kupci u zemlji matična i zavisna pravna lica</field>
+        </record>
+        <record id="account_group_rs_201" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">201</field>
+            <field
+                name="name"
+            >Kupci u inostranstvu matična i zavisna pravna lica</field>
+        </record>
+        <record id="account_group_rs_202" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">202</field>
+            <field name="name">Kupci u zemlji ostala povezana lica</field>
+        </record>
+        <record id="account_group_rs_203" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">203</field>
+            <field name="name">Kupci u inostranstvu ostala povezana lica</field>
+        </record>
+        <record id="account_group_rs_204" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">204</field>
+            <field name="name">Kupci u zemlji</field>
+        </record>
+        <record id="account_group_rs_205" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">205</field>
+            <field name="name">Kupci u inostranstvu</field>
+        </record>
+        <record id="account_group_rs_206" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">206</field>
+            <field name="name">Ostala potraživanja po osnovu prodaje</field>
+        </record>
+        <record id="account_group_rs_209" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">209</field>
+            <field name="name">Ispravka vrednosti potraživanja od prodaje</field>
+        </record>
+        <record id="account_group_rs_210" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">210</field>
+            <field name="name">Potraživanja od izvoznika</field>
+        </record>
+        <record id="account_group_rs_211" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">211</field>
+            <field name="name">Potraživanja po osnovu uvoza za tuđ račun</field>
+        </record>
+        <record id="account_group_rs_212" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">212</field>
+            <field name="name">Potraživanja iz komisione i konsignacione prodaje</field>
+        </record>
+        <record id="account_group_rs_218" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">218</field>
+            <field name="name">Ostala potraživanja iz specifičnih poslova</field>
+        </record>
+        <record id="account_group_rs_219" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">219</field>
+            <field
+                name="name"
+            >Ispravka vrednosti potraživanja iz specifičnih poslova</field>
+        </record>
+        <record id="account_group_rs_220" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">220</field>
+            <field name="name">Potraživanja za kamatu i dividende</field>
+        </record>
+        <record id="account_group_rs_221" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">221</field>
+            <field name="name">Potraživanja od zaposlenih</field>
+        </record>
+        <record id="account_group_rs_222" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">222</field>
+            <field name="name">Potraživanja od državnih organa i organizacija</field>
+        </record>
+        <record id="account_group_rs_223" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">223</field>
+            <field name="name">Potraživanja za više plaćen porez na dobitak</field>
+        </record>
+        <record id="account_group_rs_224" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">224</field>
+            <field
+                name="name"
+            >Potraživanja po osnovu preplaćenih ostalih poreza i doprinosa</field>
+        </record>
+        <record id="account_group_rs_225" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">225</field>
+            <field
+                name="name"
+            >Potraživanja za naknade zarada koje se refundiraju</field>
+        </record>
+        <record id="account_group_rs_226" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">226</field>
+            <field name="name">Potraživanja po osnovu naknada šteta</field>
+        </record>
+        <record id="account_group_rs_228" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">228</field>
+            <field name="name">Ostala kratkoročna potraživanja</field>
+        </record>
+        <record id="account_group_rs_229" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">229</field>
+            <field name="name">Ispravka vrednosti drugih potraživanja</field>
+        </record>
+        <record id="account_group_rs_230" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">230</field>
+            <field
+                name="name"
+            >Kratkoročni krediti i plasmani matična i zavisna pravna lica</field>
+        </record>
+        <record id="account_group_rs_231" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">231</field>
+            <field
+                name="name"
+            >Kratkoročni krediti i plasmani ostala povezana lica</field>
+        </record>
+        <record id="account_group_rs_232" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">232</field>
+            <field name="name">Kratkoročni krediti i zajmovi u zemlji</field>
+        </record>
+        <record id="account_group_rs_233" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">233</field>
+            <field name="name">Kratkoročni krediti i zajmovi u inostranstvu</field>
+        </record>
+        <record id="account_group_rs_234" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">234</field>
+            <field
+                name="name"
+            >Deo dugoročnih finansijskih plasmana koji dospeva do jedne godine</field>
+        </record>
+        <record id="account_group_rs_235" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">235</field>
+            <field
+                name="name"
+            >Hartije od vrednosti koje se drže do dospeća deo koji dospeva do jedne godine</field>
+        </record>
+        <record id="account_group_rs_236" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">236</field>
+            <field
+                name="name"
+            >Finansijska sredstva koja se vrednuju po fer vrednosti kroz Bilans uspeha</field>
+        </record>
+        <record id="account_group_rs_237" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">237</field>
+            <field
+                name="name"
+            >Otkupljene sopstvene akcije namenjene prodaji i otkupljeni sopstveni udeli namenjeni prodaji ili poništavanju</field>
+        </record>
+        <record id="account_group_rs_238" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">238</field>
+            <field name="name">Ostali kratkoročni finansijski plasmani</field>
+        </record>
+        <record id="account_group_rs_239" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">239</field>
+            <field
+                name="name"
+            >Ispravka vrednosti kratkoročnih finansijskih plasmana</field>
+        </record>
+        <record id="account_group_rs_240" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">240</field>
+            <field name="name">Hartije od vrednosti  gotovinski ekvivalenti</field>
+        </record>
+        <record id="account_group_rs_241" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">241</field>
+            <field name="name">Tekući (poslovni) računi</field>
+        </record>
+        <record id="account_group_rs_242" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">242</field>
+            <field name="name">Izdvojena novčana sredstva i akreditivi</field>
+        </record>
+        <record id="account_group_rs_243" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">243</field>
+            <field name="name">Blagajna</field>
+        </record>
+        <record id="account_group_rs_244" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">244</field>
+            <field name="name">Devizni račun</field>
+        </record>
+        <record id="account_group_rs_245" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">245</field>
+            <field name="name">Devizni akreditivi</field>
+        </record>
+        <record id="account_group_rs_246" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">246</field>
+            <field name="name">Devizna blagajna</field>
+        </record>
+        <record id="account_group_rs_248" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">248</field>
+            <field name="name">Ostala novčana sredstva</field>
+        </record>
+        <record id="account_group_rs_249" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">249</field>
+            <field
+                name="name"
+            >Novčana sredstva čije je korišćenje ograničeno ili vrednost umanjena</field>
+        </record>
+        <record id="account_group_rs_270" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">270</field>
+            <field
+                name="name"
+            >Porez na dodatu vrednost u primljenim fakturama po opštoj stopi (osim plaćenih avansa)</field>
+        </record>
+        <record id="account_group_rs_271" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">271</field>
+            <field
+                name="name"
+            >Porez na dodatu vrednost u primljenim fakturama po posebnoj stopi (osim plaćenih avansa)</field>
+        </record>
+        <record id="account_group_rs_272" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">272</field>
+            <field
+                name="name"
+            >Porez na dodatu vrednost u datim avansima po opštoj stopi</field>
+        </record>
+        <record id="account_group_rs_273" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">273</field>
+            <field
+                name="name"
+            >Porez na dodatu vrednost u datim avansima po posebnoj stopi</field>
+        </record>
+        <record id="account_group_rs_274" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">274</field>
+            <field
+                name="name"
+            >Porez na dodatu vrednost plaćen pri uvozu dobara po opštoj stopi</field>
+        </record>
+        <record id="account_group_rs_275" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">275</field>
+            <field
+                name="name"
+            >Porez na dodatu vrednost plaćen pri uvozu dobara po posebnoj stopi</field>
+        </record>
+        <record id="account_group_rs_276" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">276</field>
+            <field
+                name="name"
+            >Porez na dodatu vrednost obračunat na usluge inostranih lica</field>
+        </record>
+        <record id="account_group_rs_277" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">277</field>
+            <field
+                name="name"
+            >Naknadno vraćen porez na dodatu vrednost kupcima stranim državljanima</field>
+        </record>
+        <record id="account_group_rs_278" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">278</field>
+            <field name="name">PDV nadoknada isplaćena poljoprivrednicima</field>
+        </record>
+        <record id="account_group_rs_279" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">279</field>
+            <field
+                name="name"
+            >Potraživanja za više plaćeni porez na dodatu vrednost</field>
+        </record>
+        <record id="account_group_rs_280" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">280</field>
+            <field name="name">Unapred plaćeni troškovi</field>
+        </record>
+        <record id="account_group_rs_281" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">281</field>
+            <field name="name">Potraživanja za nefakturisani prihod</field>
+        </record>
+        <record id="account_group_rs_282" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">282</field>
+            <field name="name">Razgraničeni troškovi po osnovu obaveza</field>
+        </record>
+        <record id="account_group_rs_288" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">288</field>
+            <field name="name">Odložena poreska sredstva</field>
+        </record>
+        <record id="account_group_rs_289" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">289</field>
+            <field name="name">Ostala aktivna vremenska razgraničenja</field>
+        </record>
+        <record id="account_group_rs_300" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">300</field>
+            <field name="name">Akcijski kapital</field>
+        </record>
+        <record id="account_group_rs_301" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">301</field>
+            <field name="name">Udeli društava s ograničenom odgovornošću</field>
+        </record>
+        <record id="account_group_rs_302" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">302</field>
+            <field name="name">Ulozi</field>
+        </record>
+        <record id="account_group_rs_303" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">303</field>
+            <field name="name">Državni kapital</field>
+        </record>
+        <record id="account_group_rs_304" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">304</field>
+            <field name="name">Društveni kapital</field>
+        </record>
+        <record id="account_group_rs_305" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">305</field>
+            <field name="name">Zadružni udeli</field>
+        </record>
+        <record id="account_group_rs_306" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">306</field>
+            <field name="name">Emisiona premija</field>
+        </record>
+        <record id="account_group_rs_309" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">309</field>
+            <field name="name">Ostali osnovni kapital</field>
+        </record>
+        <record id="account_group_rs_310" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">310</field>
+            <field name="name">Upisane a neuplaćene akcije</field>
+        </record>
+        <record id="account_group_rs_311" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">311</field>
+            <field name="name">Upisani a neuplaćeni udeli i ulozi</field>
+        </record>
+        <record id="account_group_rs_321" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">321</field>
+            <field name="name">Zakonske rezerve</field>
+        </record>
+        <record id="account_group_rs_322" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">322</field>
+            <field name="name">Statutarne i druge rezerve</field>
+        </record>
+        <record id="account_group_rs_330" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">330</field>
+            <field
+                name="name"
+            >Revalorizacione rezerve po osnovu revalorizacije nematerijalne imovine, nekretnina, postrojenja i opreme</field>
+        </record>
+        <record id="account_group_rs_331" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">331</field>
+            <field
+                name="name"
+            >Aktuarski dobici ili gubici po osnovu planova definisanih primanja</field>
+        </record>
+        <record id="account_group_rs_332" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">332</field>
+            <field
+                name="name"
+            >Dobici ili gubici po osnovu ulaganja u vlasničke instrumente kapitala</field>
+        </record>
+        <record id="account_group_rs_333" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">333</field>
+            <field
+                name="name"
+            >Dobici ili gubici po osnovu udela u ostalom sveobuhvatnom dobitku ili gubitku pridruženih društava</field>
+        </record>
+        <record id="account_group_rs_334" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">334</field>
+            <field
+                name="name"
+            >Dobici ili gubici po osnovu preračuna finansijskih izveštaja inostranog poslovanja</field>
+        </record>
+        <record id="account_group_rs_335" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">335</field>
+            <field
+                name="name"
+            >Dobici ili gubici od instrumenata zaštite neto ulaganja u inostrano poslovanje</field>
+        </record>
+        <record id="account_group_rs_336" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">336</field>
+            <field
+                name="name"
+            >Dobici ili gubici po osnovu instrumenata zaštite rizika (hedžinga) novčanog toka</field>
+        </record>
+        <record id="account_group_rs_337" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">337</field>
+            <field
+                name="name"
+            >Dobici ili gubici po osnovu hartija od vrednosti raspoloživih za prodaju</field>
+        </record>
+        <record id="account_group_rs_340" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">340</field>
+            <field name="name">Neraspoređeni dobitak ranijih godina</field>
+        </record>
+        <record id="account_group_rs_341" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">341</field>
+            <field name="name">Neraspoređeni dobitak tekuće godine</field>
+        </record>
+        <record id="account_group_rs_350" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">350</field>
+            <field name="name">Gubitak ranijih godina</field>
+        </record>
+        <record id="account_group_rs_351" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">351</field>
+            <field name="name">Gubitak tekuće godine</field>
+        </record>
+        <record id="account_group_rs_400" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">400</field>
+            <field name="name">Rezervisanja za troškove u garantnom roku</field>
+        </record>
+        <record id="account_group_rs_401" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">401</field>
+            <field
+                name="name"
+            >Rezervisanja za troškove obnavljanja prirodnih bogatstava</field>
+        </record>
+        <record id="account_group_rs_402" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">402</field>
+            <field name="name">Rezervisanja za zadržane kaucije i depozite</field>
+        </record>
+        <record id="account_group_rs_403" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">403</field>
+            <field name="name">Rezervisanja za troškove restrukturiranja</field>
+        </record>
+        <record id="account_group_rs_404" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">404</field>
+            <field
+                name="name"
+            >Rezervisanja za naknade i druge beneficije zaposlenih</field>
+        </record>
+        <record id="account_group_rs_405" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">405</field>
+            <field name="name">Rezervisanja za troškove sudskih sporova</field>
+        </record>
+        <record id="account_group_rs_409" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">409</field>
+            <field name="name">Ostala dugoročna rezervisanja</field>
+        </record>
+        <record id="account_group_rs_410" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">410</field>
+            <field name="name">Obaveze koje se mogu konvertovati u kapital</field>
+        </record>
+        <record id="account_group_rs_411" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">411</field>
+            <field name="name">Obaveze prema matičnim i zavisnim pravnim licima</field>
+        </record>
+        <record id="account_group_rs_412" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">412</field>
+            <field name="name">Obaveze prema ostalim povezanim pravnim licima</field>
+        </record>
+        <record id="account_group_rs_413" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">413</field>
+            <field
+                name="name"
+            >Obaveze po emitovanim hartijama od vrednosti u periodu dužem od godinu dana</field>
+        </record>
+        <record id="account_group_rs_414" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">414</field>
+            <field name="name">Dugoročni krediti i zajmovi u zemlji</field>
+        </record>
+        <record id="account_group_rs_415" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">415</field>
+            <field name="name">Dugoročni krediti i zajmovi u inostranstvu</field>
+        </record>
+        <record id="account_group_rs_416" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">416</field>
+            <field name="name">Obaveze po osnovu finansijskog lizinga</field>
+        </record>
+        <record id="account_group_rs_419" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">419</field>
+            <field name="name">Ostale dugoročne obaveze</field>
+        </record>
+        <record id="account_group_rs_420" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">420</field>
+            <field
+                name="name"
+            >Kratkoročni krediti i zajmovi od matičnih i zavisnih pravnih lica</field>
+        </record>
+        <record id="account_group_rs_421" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">421</field>
+            <field
+                name="name"
+            >Kratkoročni krediti i zajmovi od ostalih povezanih lica</field>
+        </record>
+        <record id="account_group_rs_422" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">422</field>
+            <field name="name">Kratkoročni krediti i zajmovi u zemlji</field>
+        </record>
+        <record id="account_group_rs_423" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">423</field>
+            <field name="name">Kratkoročni krediti i zajmovi u inostranstvu</field>
+        </record>
+        <record id="account_group_rs_424" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">424</field>
+            <field
+                name="name"
+            >Deo dugoročnih kredita i zajmova koji dospeva do jedne godine</field>
+        </record>
+        <record id="account_group_rs_425" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">425</field>
+            <field
+                name="name"
+            >Deo ostalih dugoročnih obaveza koje dospevaju do jedne godine</field>
+        </record>
+        <record id="account_group_rs_426" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">426</field>
+            <field name="name">Obaveze po kratkoročnim hartijama od vrednosti</field>
+        </record>
+        <record id="account_group_rs_427" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">427</field>
+            <field
+                name="name"
+            >Obaveze po osnovu stalnih sredstava i sredstava obustavljenog poslovanja namenjenih prodaji</field>
+        </record>
+        <record id="account_group_rs_429" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">429</field>
+            <field name="name">Ostale kratkoročne finansijske obaveze</field>
+        </record>
+        <record id="account_group_rs_430" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">430</field>
+            <field name="name">Primljeni avansi, depoziti i kaucije</field>
+        </record>
+        <record id="account_group_rs_431" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">431</field>
+            <field name="name">Dobavljači matična i zavisna pravna lica u zemlji</field>
+        </record>
+        <record id="account_group_rs_432" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">432</field>
+            <field
+                name="name"
+            >Dobavljači matična i zavisna pravna lica u inostranstvu</field>
+        </record>
+        <record id="account_group_rs_433" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">433</field>
+            <field name="name">Dobavljači ostala povezana lica u zemlji</field>
+        </record>
+        <record id="account_group_rs_434" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">434</field>
+            <field name="name">Dobavljači ostala povezana lica u inostranstvu</field>
+        </record>
+        <record id="account_group_rs_435" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">435</field>
+            <field name="name">Dobavljači u zemlji</field>
+        </record>
+        <record id="account_group_rs_436" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">436</field>
+            <field name="name">Dobavljači u inostranstvu</field>
+        </record>
+        <record id="account_group_rs_439" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">439</field>
+            <field name="name">Ostale obaveze iz poslovanja</field>
+        </record>
+        <record id="account_group_rs_440" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">440</field>
+            <field name="name">Obaveze prema uvozniku</field>
+        </record>
+        <record id="account_group_rs_441" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">441</field>
+            <field name="name">Obaveze po osnovu izvoza za tuđ račun</field>
+        </record>
+        <record id="account_group_rs_442" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">442</field>
+            <field
+                name="name"
+            >Obaveze po osnovu komisione i konsignacione prodaje</field>
+        </record>
+        <record id="account_group_rs_449" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">449</field>
+            <field name="name">Ostale obaveze iz specifičnih poslova</field>
+        </record>
+        <record id="account_group_rs_450" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">450</field>
+            <field
+                name="name"
+            >Obaveze za neto zarade i naknade zarada, osim naknada zarada koje se refundiraju</field>
+        </record>
+        <record id="account_group_rs_451" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">451</field>
+            <field
+                name="name"
+            >Obaveze za porez na zarade i naknade zarada na teret zaposlenog</field>
+        </record>
+        <record id="account_group_rs_452" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">452</field>
+            <field
+                name="name"
+            >Obaveze za doprinose na zarade i naknade zarada na teret zaposlenog</field>
+        </record>
+        <record id="account_group_rs_453" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">453</field>
+            <field
+                name="name"
+            >Obaveze za poreze i doprinose na zarade i naknade zarada na teret poslodavca</field>
+        </record>
+        <record id="account_group_rs_454" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">454</field>
+            <field
+                name="name"
+            >Obaveze za neto naknade zarada koje se refundiraju refundiraju</field>
+        </record>
+        <record id="account_group_rs_455" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">455</field>
+            <field
+                name="name"
+            >Obaveze za poreze i doprinose na naknade zarada na teret zaposlenog koje se refundiraju</field>
+        </record>
+        <record id="account_group_rs_456" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">456</field>
+            <field
+                name="name"
+            >Obaveze za poreze i doprinose na naknade zarada na teret poslodavca koje se refundiraju</field>
+        </record>
+        <record id="account_group_rs_460" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">460</field>
+            <field name="name">Obaveze po osnovu kamata i troškova finansiranja</field>
+        </record>
+        <record id="account_group_rs_461" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">461</field>
+            <field name="name">Obaveze za dividende</field>
+        </record>
+        <record id="account_group_rs_462" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">462</field>
+            <field name="name">Obaveze za učešće u dobitku</field>
+        </record>
+        <record id="account_group_rs_463" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">463</field>
+            <field name="name">Obaveze prema zaposlenima</field>
+        </record>
+        <record id="account_group_rs_464" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">464</field>
+            <field
+                name="name"
+            >Obaveze prema direktoru, odnosno članovima organa upravljanja i nadzora</field>
+        </record>
+        <record id="account_group_rs_465" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">465</field>
+            <field
+                name="name"
+            >Obaveze prema fizičkim licima za naknade po ugovorima</field>
+        </record>
+        <record id="account_group_rs_466" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">466</field>
+            <field
+                name="name"
+            >Obaveze za neto prihod preduzetnika koji akontaciju podiže u toku godine</field>
+        </record>
+        <record id="account_group_rs_467" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">467</field>
+            <field name="name">Obaveze za kratkoročna rezervisanja</field>
+        </record>
+        <record id="account_group_rs_469" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">469</field>
+            <field name="name">Ostale obaveze</field>
+        </record>
+        <record id="account_group_rs_470" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">470</field>
+            <field
+                name="name"
+            >Obaveze za porez na dodatu vrednost po izdatim fakturama po opštoj stopi (osim primljenih avansa)</field>
+        </record>
+        <record id="account_group_rs_471" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">471</field>
+            <field
+                name="name"
+            >Obaveze za porez na dodatu vrednost po izdatim fakturama po posebnoj stopi (osim primljenih avansa)</field>
+        </record>
+        <record id="account_group_rs_472" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">472</field>
+            <field
+                name="name"
+            >Obaveze za porez na dodatu vrednost po primljenim avansima po opštoj stopi</field>
+        </record>
+        <record id="account_group_rs_473" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">473</field>
+            <field
+                name="name"
+            >Obaveze za porez na dodatu vrednost po primljenim avansima po posebnoj stopi</field>
+        </record>
+        <record id="account_group_rs_474" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">474</field>
+            <field
+                name="name"
+            >Obaveze za porez na dodatu vrednost po osnovu sopstvene potrošnje po opštoj stopi</field>
+        </record>
+        <record id="account_group_rs_475" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">475</field>
+            <field
+                name="name"
+            >Obaveze za porez na dodatu vrednost po osnovu sopstvene potrošnje po posebnoj stopi</field>
+        </record>
+        <record id="account_group_rs_476" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">476</field>
+            <field
+                name="name"
+            >Obaveze za porez na dodatu vrednost po osnovu prodaje za gotovinu</field>
+        </record>
+        <record id="account_group_rs_479" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">479</field>
+            <field
+                name="name"
+            >Obaveze za porez na dodatu vrednost po osnovu razlike obračunatog poreza na dodatu vrednost i prethodnog poreza</field>
+        </record>
+        <record id="account_group_rs_480" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">480</field>
+            <field name="name">Obaveze za akcize</field>
+        </record>
+        <record id="account_group_rs_481" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">481</field>
+            <field name="name">Obaveze za porez iz rezultata</field>
+        </record>
+        <record id="account_group_rs_482" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">482</field>
+            <field
+                name="name"
+            >Obaveze za poreze, carine i druge dažbine iz nabavke ili na teret troškova</field>
+        </record>
+        <record id="account_group_rs_483" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">483</field>
+            <field name="name">Obaveze za doprinose koji terete troškove</field>
+        </record>
+        <record id="account_group_rs_489" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">489</field>
+            <field
+                name="name"
+            >Ostale obaveze za poreze, doprinose i druge dažbine</field>
+        </record>
+        <record id="account_group_rs_490" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">490</field>
+            <field name="name">Unapred obračunati troškovi</field>
+        </record>
+        <record id="account_group_rs_491" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">491</field>
+            <field name="name">Unapred naplaćeni prihodi</field>
+        </record>
+        <record id="account_group_rs_494" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">494</field>
+            <field name="name">Razgraničeni zavisni troškovi nabavke</field>
+        </record>
+        <record id="account_group_rs_495" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">495</field>
+            <field name="name">Odloženi prihodi i primljene donacije</field>
+        </record>
+        <record id="account_group_rs_496" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">496</field>
+            <field name="name">Razgraničeni prihodi po osnovu potraživanja</field>
+        </record>
+        <record id="account_group_rs_498" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">498</field>
+            <field name="name">Odložene poreske obaveze</field>
+        </record>
+        <record id="account_group_rs_499" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">499</field>
+            <field name="name">Ostala pasivna vremenska razgraničenja</field>
+        </record>
+        <record id="account_group_rs_5" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">5</field>
+            <field name="name">Nabavka robe</field>
+        </record>
+        <record id="account_group_rs_501" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">501</field>
+            <field name="name">Nabavna vrednost prodate robe</field>
+        </record>
+        <record id="account_group_rs_502" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">502</field>
+            <field
+                name="name"
+            >Nabavna vrednost nekretnina pribavljenih radi prodaje</field>
+        </record>
+        <record id="account_group_rs_503" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">503</field>
+            <field
+                name="name"
+            >Nabavna vrednost ostalih stalnih sredstava namenjenih prodaji</field>
+        </record>
+        <record id="account_group_rs_510" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">510</field>
+            <field name="name">Nabavka materijala</field>
+        </record>
+        <record id="account_group_rs_511" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">511</field>
+            <field name="name">Troškovi materijala za izradu</field>
+        </record>
+        <record id="account_group_rs_512" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">512</field>
+            <field name="name">Troškovi ostalog materijala (režijskog)</field>
+        </record>
+        <record id="account_group_rs_513" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">513</field>
+            <field name="name">Troškovi goriva i energije</field>
+        </record>
+        <record id="account_group_rs_514" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">514</field>
+            <field name="name">Troškovi rezervnih delova</field>
+        </record>
+        <record id="account_group_rs_515" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">515</field>
+            <field name="name">Troškovi jednokratnog otpisa alata i inventara</field>
+        </record>
+        <record id="account_group_rs_520" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">520</field>
+            <field name="name">Troškovi zarada i naknada zarada (bruto)</field>
+        </record>
+        <record id="account_group_rs_521" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">521</field>
+            <field
+                name="name"
+            >Troškovi poreza i doprinosa na zarade i naknade zarada na teret poslodavca</field>
+        </record>
+        <record id="account_group_rs_522" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">522</field>
+            <field name="name">Troškovi naknada po ugovoru o delu</field>
+        </record>
+        <record id="account_group_rs_523" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">523</field>
+            <field name="name">Troškovi naknada po autorskim ugovorima</field>
+        </record>
+        <record id="account_group_rs_524" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">524</field>
+            <field
+                name="name"
+            >Troškovi naknada po ugovoru o privremenim i povremenim poslovima</field>
+        </record>
+        <record id="account_group_rs_525" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">525</field>
+            <field
+                name="name"
+            >Troškovi naknada fizičkim licima po osnovu ostalih ugovora</field>
+        </record>
+        <record id="account_group_rs_526" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">526</field>
+            <field
+                name="name"
+            >Troškovi naknada direktoru, odnosno članovima organa upravljanja i nadzora</field>
+        </record>
+        <record id="account_group_rs_529" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">529</field>
+            <field name="name">Ostali lični rashodi i naknade</field>
+        </record>
+        <record id="account_group_rs_530" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">530</field>
+            <field name="name">Troškovi usluga na izradi učinaka</field>
+        </record>
+        <record id="account_group_rs_531" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">531</field>
+            <field name="name">Troškovi transportnih usluga</field>
+        </record>
+        <record id="account_group_rs_532" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">532</field>
+            <field name="name">Troškovi usluga održavanja</field>
+        </record>
+        <record id="account_group_rs_533" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">533</field>
+            <field name="name">Troškovi zakupnina</field>
+        </record>
+        <record id="account_group_rs_534" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">534</field>
+            <field name="name">Troškovi sajmova</field>
+        </record>
+        <record id="account_group_rs_535" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">535</field>
+            <field name="name">Troškovi reklame i propagande</field>
+        </record>
+        <record id="account_group_rs_536" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">536</field>
+            <field name="name">Troškovi istraživanja</field>
+        </record>
+        <record id="account_group_rs_537" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">537</field>
+            <field name="name">Troškovi razvoja koji se ne kapitalizuju</field>
+        </record>
+        <record id="account_group_rs_539" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">539</field>
+            <field name="name">Troškovi ostalih usluga</field>
+        </record>
+        <record id="account_group_rs_540" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">540</field>
+            <field name="name">Troškovi amortizacije</field>
+        </record>
+        <record id="account_group_rs_541" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">541</field>
+            <field name="name">Troškovi rezervisanja za garantni rok</field>
+        </record>
+        <record id="account_group_rs_542" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">542</field>
+            <field
+                name="name"
+            >Rezervisanja za troškove obnavljanja prirodnih bogatstava</field>
+        </record>
+        <record id="account_group_rs_543" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">543</field>
+            <field name="name">Rezervisanja za zadržane kaucije i depozite</field>
+        </record>
+        <record id="account_group_rs_544" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">544</field>
+            <field name="name">Rezervisanja za troškove restrukturiranja</field>
+        </record>
+        <record id="account_group_rs_545" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">545</field>
+            <field
+                name="name"
+            >Rezervisanja za naknade i druge beneficije zaposlenih</field>
+        </record>
+        <record id="account_group_rs_549" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">549</field>
+            <field name="name">Ostala rezervisanja</field>
+        </record>
+        <record id="account_group_rs_550" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">550</field>
+            <field name="name">Troškovi neproizvodnih usluga</field>
+        </record>
+        <record id="account_group_rs_551" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">551</field>
+            <field name="name">Troškovi reprezentacije</field>
+        </record>
+        <record id="account_group_rs_552" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">552</field>
+            <field name="name">Troškovi premija osiguranja</field>
+        </record>
+        <record id="account_group_rs_553" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">553</field>
+            <field name="name">Troškovi platnog prometa</field>
+        </record>
+        <record id="account_group_rs_554" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">554</field>
+            <field name="name">Troškovi članarina</field>
+        </record>
+        <record id="account_group_rs_555" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">555</field>
+            <field name="name">Troškovi poreza</field>
+        </record>
+        <record id="account_group_rs_556" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">556</field>
+            <field name="name">Troškovi doprinosa</field>
+        </record>
+        <record id="account_group_rs_559" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">559</field>
+            <field name="name">Ostali nematerijalni troškovi</field>
+        </record>
+        <record id="account_group_rs_560" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">560</field>
+            <field
+                name="name"
+            >Finansijski rashodi iz odnosa sa matičnim i zavisnim pravnim licima</field>
+        </record>
+        <record id="account_group_rs_561" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">561</field>
+            <field
+                name="name"
+            >Finansijski rashodi iz odnosa sa ostalim povezanim pravnim licima</field>
+        </record>
+        <record id="account_group_rs_562" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">562</field>
+            <field name="name">Rashodi kamata (prema trećim licima)</field>
+        </record>
+        <record id="account_group_rs_563" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">563</field>
+            <field name="name">Negativne kursne razlike (prema trećim licima)</field>
+        </record>
+        <record id="account_group_rs_564" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">564</field>
+            <field
+                name="name"
+            >Rashodi po osnovu efekata valutne klauzule (prema trećim licima)</field>
+        </record>
+        <record id="account_group_rs_565" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">565</field>
+            <field
+                name="name"
+            >Rashodi od učešća u gubitku pridruženih pravnih lica i zajedničkih poduhvata</field>
+        </record>
+        <record id="account_group_rs_566" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">566</field>
+            <field
+                name="name"
+            >Rashodi po osnovu efekata ugovorene zaštite od rizika, koji ne ispunjavaju uslove da se iskažu u okviru ostalog sveobuhvatnog dobitka</field>
+        </record>
+        <record id="account_group_rs_569" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">569</field>
+            <field name="name">Ostali finansijski rashodi</field>
+        </record>
+        <record id="account_group_rs_570" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">570</field>
+            <field
+                name="name"
+            >Gubici po osnovu rashodovanja i prodaje nematerijalne imovine, nekretnina, postrojenja i opreme</field>
+        </record>
+        <record id="account_group_rs_571" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">571</field>
+            <field
+                name="name"
+            >Gubici po osnovu rashodovanja i prodaje bioloških sredstava</field>
+        </record>
+        <record id="account_group_rs_572" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">572</field>
+            <field
+                name="name"
+            >Gubici po osnovu prodaje učešća u kapitalu i hartija od vrednosti</field>
+        </record>
+        <record id="account_group_rs_573" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">573</field>
+            <field name="name">Gubici od prodaje materijala</field>
+        </record>
+        <record id="account_group_rs_574" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">574</field>
+            <field name="name">Manjkovi</field>
+        </record>
+        <record id="account_group_rs_575" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">575</field>
+            <field
+                name="name"
+            >Rashodi po osnovu efekata ugovorene zaštite od rizika, koji ne ispunjavaju uslove da se iskažu u okviru ostalog sveobuhvatnog rezultata</field>
+        </record>
+        <record id="account_group_rs_576" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">576</field>
+            <field name="name">Rashodi po osnovu direktnih otpisa potraživanja</field>
+        </record>
+        <record id="account_group_rs_577" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">577</field>
+            <field
+                name="name"
+            >Rashodi po osnovu rashodovanja zaliha materijala i robe</field>
+        </record>
+        <record id="account_group_rs_579" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">579</field>
+            <field name="name">Ostali nepomenuti rashodi</field>
+        </record>
+        <record id="account_group_rs_580" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">580</field>
+            <field name="name">Obezvređenje bioloških sredstava</field>
+        </record>
+        <record id="account_group_rs_581" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">581</field>
+            <field name="name">Obezvređenje nematerijalne imovine</field>
+        </record>
+        <record id="account_group_rs_582" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">582</field>
+            <field name="name">Obezvređenje nekretnina, postrojenja i opreme</field>
+        </record>
+        <record id="account_group_rs_583" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">583</field>
+            <field
+                name="name"
+            >Obezvređenje dugoročnih finansijskih plasmana i drugih hartija od vrednosti raspoloživih za prodaju</field>
+        </record>
+        <record id="account_group_rs_584" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">584</field>
+            <field name="name">Obezvređenje zaliha materijala i robe</field>
+        </record>
+        <record id="account_group_rs_585" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">585</field>
+            <field
+                name="name"
+            >Obezvređenje potraživanja i kratkoročnih finansijskih plasmana</field>
+        </record>
+        <record id="account_group_rs_589" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">589</field>
+            <field name="name">Obezvređenje ostale imovine</field>
+        </record>
+        <record id="account_group_rs_590" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">590</field>
+            <field name="name">Gubitak poslovanja koje se obustavlja</field>
+        </record>
+        <record id="account_group_rs_591" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">591</field>
+            <field
+                name="name"
+            >Rashodi po osnovu efekata promene računovodstvenih politika</field>
+        </record>
+        <record id="account_group_rs_592" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">592</field>
+            <field
+                name="name"
+            >Rashodi po osnovu ispravki grešaka iz ranijih godina koje nisu materijalno značajne</field>
+        </record>
+        <record id="account_group_rs_599" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">599</field>
+            <field name="name">Prenos rashoda</field>
+        </record>
+        <record id="account_group_rs_600" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">600</field>
+            <field
+                name="name"
+            >Prihodi od prodaje robe matičnim i zavisnim pravnim licima na domaćem tržištu</field>
+        </record>
+        <record id="account_group_rs_601" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">601</field>
+            <field
+                name="name"
+            >Prihodi od prodaje robe matičnim i zavisnim pravnim licima na inostranom tržištu</field>
+        </record>
+        <record id="account_group_rs_602" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">602</field>
+            <field
+                name="name"
+            >Prihodi od prodaje robe ostalim povezanim pravnim licima na domaćem tržištu</field>
+        </record>
+        <record id="account_group_rs_603" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">603</field>
+            <field
+                name="name"
+            >Prihodi od prodaje robe ostalim povezanim pravnim licima na inostranom tržištu</field>
+        </record>
+        <record id="account_group_rs_604" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">604</field>
+            <field name="name">Prihodi od prodaje robe na domaćem tržištu</field>
+        </record>
+        <record id="account_group_rs_605" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">605</field>
+            <field name="name">Prihodi od prodaje robe na inostranom tržištu</field>
+        </record>
+        <record id="account_group_rs_610" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">610</field>
+            <field
+                name="name"
+            >Prihodi od prodaje proizvoda i usluga matičnim i zavisnim pravnim licima na domaćem tržištu</field>
+        </record>
+        <record id="account_group_rs_611" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">611</field>
+            <field
+                name="name"
+            >Prihodi od prodaje proizvoda i usluga matičnim i zavisnim pravnim licima na inostranom tržištu</field>
+        </record>
+        <record id="account_group_rs_612" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">612</field>
+            <field
+                name="name"
+            >Prihodi od prodaje proizvoda i usluga ostalim povezanim pravnim licima na domaćem tržištu</field>
+        </record>
+        <record id="account_group_rs_613" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">613</field>
+            <field
+                name="name"
+            >Prihodi od prodaje proizvoda i usluga ostalim povezanim pravnim licima na inostranom tržištu</field>
+        </record>
+        <record id="account_group_rs_614" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">614</field>
+            <field
+                name="name"
+            >Prihodi od prodaje proizvoda i usluga na domaćem tržištu</field>
+        </record>
+        <record id="account_group_rs_615" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">615</field>
+            <field
+                name="name"
+            >Prihodi od prodaje proizvoda i usluga na inostranom tržištu</field>
+        </record>
+        <record id="account_group_rs_620" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">620</field>
+            <field
+                name="name"
+            >Prihodi od aktiviranja ili potrošnje robe za sopstvene potrebe</field>
+        </record>
+        <record id="account_group_rs_621" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">621</field>
+            <field
+                name="name"
+            >Prihodi od aktiviranja ili potrošnje proizvoda i usluga za sopstvene potrebe</field>
+        </record>
+        <record id="account_group_rs_630" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">630</field>
+            <field
+                name="name"
+            >Povećanje vrednosti zaliha nedovršenih i gotovih proizvoda i nedovršenihusluga</field>
+        </record>
+        <record id="account_group_rs_631" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">631</field>
+            <field
+                name="name"
+            >Smanjenje vrednosti zaliha nedovršenih i gotovih proizvoda i nedovršenih usluga</field>
+        </record>
+        <record id="account_group_rs_640" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">640</field>
+            <field
+                name="name"
+            >Prihodi od premija, subvencija, dotacija, regresa, kompenzacija i povraćaja poreskih dažbina</field>
+        </record>
+        <record id="account_group_rs_641" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">641</field>
+            <field name="name">Prihodi po osnovu uslovljenih donacija</field>
+        </record>
+        <record id="account_group_rs_650" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">650</field>
+            <field name="name">Prihodi od zakupnina</field>
+        </record>
+        <record id="account_group_rs_651" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">651</field>
+            <field name="name">Prihodi od članarina</field>
+        </record>
+        <record id="account_group_rs_652" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">652</field>
+            <field name="name">Prihodi od tantijema i licencnih naknada</field>
+        </record>
+        <record id="account_group_rs_659" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">659</field>
+            <field name="name">Ostali poslovni prihodi</field>
+        </record>
+        <record id="account_group_rs_660" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">660</field>
+            <field
+                name="name"
+            >Finansijski prihodi od matičnih i zavisnih pravnih lica</field>
+        </record>
+        <record id="account_group_rs_661" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">661</field>
+            <field name="name">Finansijski prihodi od ostalih povezanih lica</field>
+        </record>
+        <record id="account_group_rs_662" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">662</field>
+            <field name="name">Prihodi od kamata (od trećih lica)</field>
+        </record>
+        <record id="account_group_rs_663" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">663</field>
+            <field name="name">Pozitivne kursne razlike (prema trećim licima)</field>
+        </record>
+        <record id="account_group_rs_664" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">664</field>
+            <field
+                name="name"
+            >Prihodi po osnovu efekata valutne klauzule (prema trećim licima)</field>
+        </record>
+        <record id="account_group_rs_665" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">665</field>
+            <field
+                name="name"
+            >Prihodi od učešća u dobitku pridruženih pravnih lica i zajedničkih poduhvata</field>
+        </record>
+        <record id="account_group_rs_669" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">669</field>
+            <field name="name">Ostali finansijski prihodi</field>
+        </record>
+        <record id="account_group_rs_670" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">670</field>
+            <field
+                name="name"
+            >Dobici od prodaje nematerijalne imovine, nekretnina, postrojenja i opreme</field>
+        </record>
+        <record id="account_group_rs_671" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">671</field>
+            <field name="name">Dobici od prodaje bioloških sredstava</field>
+        </record>
+        <record id="account_group_rs_672" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">672</field>
+            <field name="name">Dobici od prodaje učešća i hartija od vrednosti</field>
+        </record>
+        <record id="account_group_rs_673" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">673</field>
+            <field name="name">Dobici od prodaje materijala</field>
+        </record>
+        <record id="account_group_rs_674" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">674</field>
+            <field name="name">Viškovi</field>
+        </record>
+        <record id="account_group_rs_675" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">675</field>
+            <field name="name">Naplaćena otpisana potraživanja</field>
+        </record>
+        <record id="account_group_rs_676" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">676</field>
+            <field
+                name="name"
+            >Prihodi po osnovu efekata ugovorene zaštite od rizika koji ne ispunjavaju uslove da se iskažu u okviru ostalog sveobuhvatnog rezultata</field>
+        </record>
+        <record id="account_group_rs_677" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">677</field>
+            <field name="name">Prihodi od smanjenja obaveza</field>
+        </record>
+        <record id="account_group_rs_678" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">678</field>
+            <field
+                name="name"
+            >Prihodi od ukidanja dugoročnih i kratkoročnih rezervisanja</field>
+        </record>
+        <record id="account_group_rs_679" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">679</field>
+            <field name="name">Ostali nepomenuti prihodi</field>
+        </record>
+        <record id="account_group_rs_680" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">680</field>
+            <field
+                name="name"
+            >Prihodi od usklađivanja vrednosti bioloških sredstava</field>
+        </record>
+        <record id="account_group_rs_681" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">681</field>
+            <field
+                name="name"
+            >Prihodi od usklađivanja vrednosti nematerijalne imovine</field>
+        </record>
+        <record id="account_group_rs_682" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">682</field>
+            <field
+                name="name"
+            >Prihodi od usklađivanja vrednosti nekretnina, postrojenja i opreme</field>
+        </record>
+        <record id="account_group_rs_683" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">683</field>
+            <field
+                name="name"
+            >Prihodi od usklađivanja vrednosti dugoročnih finansijskih plasmana i hartija od vrednosti raspoloživih za prodaju</field>
+        </record>
+        <record id="account_group_rs_684" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">684</field>
+            <field name="name">Prihodi od usklađivanja vrednosti zaliha</field>
+        </record>
+        <record id="account_group_rs_685" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">685</field>
+            <field
+                name="name"
+            >Prihodi od usklađivanja vrednosti potraživanja i kratkoročnih finansijskih plasmana</field>
+        </record>
+        <record id="account_group_rs_689" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">689</field>
+            <field name="name">Prihodi od usklađivanja vrednosti ostale imovine</field>
+        </record>
+        <record id="account_group_rs_690" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">690</field>
+            <field name="name">Dobitak poslovanja koje se obustavlja</field>
+        </record>
+        <record id="account_group_rs_691" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">691</field>
+            <field
+                name="name"
+            >Prihodi od efekata promene računovodstvenih politika</field>
+        </record>
+        <record id="account_group_rs_692" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">692</field>
+            <field
+                name="name"
+            >Prihodi po osnovu ispravki grešaka iz ranijih godina koje nisu materijalno značajne</field>
+        </record>
+        <record id="account_group_rs_699" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">699</field>
+            <field name="name">Prenos prihoda</field>
+        </record>
+        <record id="account_group_rs_700" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">700</field>
+            <field name="name">Otvaranje glavne knjige</field>
+        </record>
+        <record id="account_group_rs_710" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">710</field>
+            <field name="name">Rashodi i prihodi</field>
+        </record>
+        <record id="account_group_rs_711" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">711</field>
+            <field name="name">Dobitak i gubitak poslovanja koje se obustavlja</field>
+        </record>
+        <record id="account_group_rs_712" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">712</field>
+            <field name="name">Prenos ukupnih rezultata</field>
+        </record>
+        <record id="account_group_rs_720" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">720</field>
+            <field name="name">Dobitak ili gubitak</field>
+        </record>
+        <record id="account_group_rs_721" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">721</field>
+            <field name="name">Poreski rashod perioda</field>
+        </record>
+        <record id="account_group_rs_722" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">722</field>
+            <field name="name">Odloženi poreski rashodi i prihodi perioda</field>
+        </record>
+        <record id="account_group_rs_723" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">723</field>
+            <field name="name">Lična primanja poslodavca</field>
+        </record>
+        <record id="account_group_rs_724" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">724</field>
+            <field name="name">Prenos dobitka ili gubitka</field>
+        </record>
+        <record id="account_group_rs_730" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">730</field>
+            <field name="name">Izravnanje računa stanja</field>
+        </record>
+        <record id="account_group_rs_880" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">880</field>
+            <field name="name">Tuđa sredstva uzeta u operativni lizing (zakup)</field>
+        </record>
+        <record id="account_group_rs_881" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">881</field>
+            <field
+                name="name"
+            >Preuzeti proizvodi i roba za zajedničko poslovanje</field>
+        </record>
+        <record id="account_group_rs_882" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">882</field>
+            <field name="name">Roba uzeta u komision i konsignaciju</field>
+        </record>
+        <record id="account_group_rs_883" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">883</field>
+            <field name="name">Materijal i roba primljeni na obradu i doradu</field>
+        </record>
+        <record id="account_group_rs_884" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">884</field>
+            <field name="name">Data jemstva, garancije i druga prava</field>
+        </record>
+        <record id="account_group_rs_885" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">885</field>
+            <field name="name">Hartije od vrednosti koje su van prometa</field>
+        </record>
+        <record id="account_group_rs_889" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">889</field>
+            <field name="name">Imovina kod drugih subjekata</field>
+        </record>
+        <record id="account_group_rs_890" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">890</field>
+            <field
+                name="name"
+            >Obaveze za sredstva uzeta u operativni lizing (zakup)</field>
+        </record>
+        <record id="account_group_rs_891" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">891</field>
+            <field
+                name="name"
+            >Obaveze za preuzete proizvode i robu za zajedničko poslovanje</field>
+        </record>
+        <record id="account_group_rs_892" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">892</field>
+            <field name="name">Obaveze za robu uzetu u komision i konsignaciju</field>
+        </record>
+        <record id="account_group_rs_893" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">893</field>
+            <field
+                name="name"
+            >Obaveze za materijal i robu primljenu na obradu i doradu</field>
+        </record>
+        <record id="account_group_rs_894" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">894</field>
+            <field name="name">Obaveze za data jemstva, garancije i druga prava</field>
+        </record>
+        <record id="account_group_rs_895" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">895</field>
+            <field
+                name="name"
+            >Obaveze za hartije od vrednosti koje su van prometa</field>
+        </record>
+        <record id="account_group_rs_899" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">899</field>
+            <field name="name">Obaveze za imovinu kod drugih subjekata</field>
+        </record>
+        <record id="account_group_rs_900" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">900</field>
+            <field name="name">Račun za preuzimanje zaliha</field>
+        </record>
+        <record id="account_group_rs_901" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">901</field>
+            <field name="name">Račun za preuzimanje nabavke materijala i robe</field>
+        </record>
+        <record id="account_group_rs_902" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">902</field>
+            <field name="name">Račun za preuzimanje troškova</field>
+        </record>
+        <record id="account_group_rs_903" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">903</field>
+            <field name="name">Račun za preuzimanje prihoda</field>
+        </record>
+        <record id="account_group_rs_910" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">910</field>
+            <field name="name">Materijal</field>
+        </record>
+        <record id="account_group_rs_911" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">911</field>
+            <field name="name">Roba</field>
+        </record>
+        <record id="account_group_rs_912" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">912</field>
+            <field name="name">Proizvodi i roba u prodavnicama proizvođača</field>
+        </record>
+        <record id="account_group_rs_920" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">920</field>
+            <field name="name">Mesto troška nabavke</field>
+        </record>
+        <record id="account_group_rs_921" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">921</field>
+            <field name="name">Mesto troška tehničke uprave</field>
+        </record>
+        <record id="account_group_rs_922" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">922</field>
+            <field name="name">Mesta troškova pomoćne delatnosti</field>
+        </record>
+        <record id="account_group_rs_930" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">930</field>
+            <field name="name">Mesto troškova osnovna delatnost</field>
+        </record>
+        <record id="account_group_rs_931" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">931</field>
+            <field name="name">Mesto troškova sporedna delatnost</field>
+        </record>
+        <record id="account_group_rs_940" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">940</field>
+            <field name="name">Mesto troška uprave</field>
+        </record>
+        <record id="account_group_rs_941" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">941</field>
+            <field name="name">Mesto troška prodaje</field>
+        </record>
+        <record id="account_group_rs_950" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">950</field>
+            <field name="name">Proizvodnja proizvoda osnovne delatnosti</field>
+        </record>
+        <record id="account_group_rs_951" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">951</field>
+            <field name="name">Proizvodnja proizvoda sporedne delatnosti</field>
+        </record>
+        <record id="account_group_rs_958" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">958</field>
+            <field name="name">Poluproizvodi sopstvene proizvodnje</field>
+        </record>
+        <record id="account_group_rs_959" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">959</field>
+            <field name="name">Odstupanja u troškovima nosioca troškova</field>
+        </record>
+        <record id="account_group_rs_960" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">960</field>
+            <field name="name">do 968 - Gotovi proizvodi</field>
+        </record>
+        <record id="account_group_rs_969" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">969</field>
+            <field name="name">Odstupanja u troškovima gotovih proizvoda</field>
+        </record>
+        <record id="account_group_rs_980" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">980</field>
+            <field name="name">Troškovi prodatih proizvoda i usluga</field>
+        </record>
+        <record id="account_group_rs_981" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">981</field>
+            <field name="name">Nabavna vrednost prodate robe</field>
+        </record>
+        <record id="account_group_rs_982" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">982</field>
+            <field name="name">Troškovi perioda</field>
+        </record>
+        <record id="account_group_rs_983" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">983</field>
+            <field name="name">Otpisi, manjkovi i viškovi zaliha učinaka</field>
+        </record>
+        <record id="account_group_rs_985" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">985</field>
+            <field name="name">Slobodan račun</field>
+        </record>
+        <record id="account_group_rs_986" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">986</field>
+            <field name="name">Prihodi po osnovu proizvoda i usluga</field>
+        </record>
+        <record id="account_group_rs_987" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">987</field>
+            <field name="name">Prihodi po osnovu robe</field>
+        </record>
+        <record id="account_group_rs_988" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">988</field>
+            <field name="name">Slobodan račun</field>
+        </record>
+        <record id="account_group_rs_989" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">989</field>
+            <field name="name">Drugi prihodi</field>
+        </record>
+        <record id="account_group_rs_990" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">990</field>
+            <field name="name">Poslovni dobitak i gubitak</field>
+        </record>
+        <record id="account_group_rs_991" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">991</field>
+            <field name="name">Gubitak i dobitak po osnovu prodaje materijala</field>
+        </record>
+        <record id="account_group_rs_992" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">992</field>
+            <field name="name">Manjkovi materijala i robe</field>
+        </record>
+        <record id="account_group_rs_993" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">993</field>
+            <field name="name">Otpisi materijala i robe</field>
+        </record>
+        <record id="account_group_rs_994" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">994</field>
+            <field name="name">Viškovi materijala i robe</field>
+        </record>
+        <record id="account_group_rs_999" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_rs.l10n_rs_chart_template" />
+            <field name="code_prefix_start">999</field>
+            <field name="name">Zaključak obračuna troškova i učinaka</field>
+        </record>
+    </data>
+</odoo>

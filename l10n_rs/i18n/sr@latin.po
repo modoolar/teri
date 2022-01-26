@@ -1,0 +1,437 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_rs
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-12 12:54+0000\n"
+"PO-Revision-Date: 2021-08-12 12:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_tax_template__account_id
+msgid "Account"
+msgstr "Konto"
+
+#. module: l10n_rs
+#: model:ir.model,name:l10n_rs.model_account_chart_template
+msgid "Account Chart Template"
+msgstr "Kontni okvir"
+
+#. module: l10n_rs
+#: model:ir.model,name:l10n_rs.model_account_move_reversal
+msgid "Account Move Reversal"
+msgstr "Poništavanje knjiženja"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_chart_template__property_account_expense_group_id
+msgid "Account expense group"
+msgstr ""
+
+#. module: l10n_rs
+#: model_terms:ir.ui.view,arch_db:l10n_rs.res_config_settings_view_form
+msgid "Accounting Serbia"
+msgstr "Računovodstvo za Srbiju"
+
+#. module: l10n_rs
+#: model_terms:ir.ui.view,arch_db:l10n_rs.res_config_settings_view_form
+msgid ""
+"Additional contact and company fields such as Legal Form, VAT status, Bank "
+"account status etc."
+msgstr "Dodatna polja za kontakte i kompaniju (Pravna forma, Poreski status, Status bankovnih racuna, itd.)"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_res_company__generate_product_reference
+#: model:ir.model.fields,field_description:l10n_rs.field_res_config_settings__generate_product_reference
+#: model_terms:ir.ui.view,arch_db:l10n_rs.res_config_settings_view_form
+msgid "Automatically generate product reference"
+msgstr "Automatsko generisanje referenci proizvoda"
+
+#. module: l10n_rs
+#: model:product.product,name:l10n_rs.l10n_rs_advance_product
+#: model:product.template,name:l10n_rs.l10n_rs_advance_product_product_template
+msgid "Avans"
+msgstr "Avans"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_chart_template__property_account_income_categ_foreign_id
+msgid "Category of Foreign Income Account"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model,name:l10n_rs.model_res_company
+msgid "Companies"
+msgstr "Preduzeća"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_res_partner__company_registry_number
+#: model:ir.model.fields,field_description:l10n_rs.field_res_users__company_registry_number
+msgid "Company Registry Number"
+msgstr "Matični broj kompanije"
+
+#. module: l10n_rs
+#: model:ir.model,name:l10n_rs.model_res_config_settings
+msgid "Config Settings"
+msgstr "Konfiguracioni Parametri"
+
+#. module: l10n_rs
+#: model_terms:ir.ui.view,arch_db:l10n_rs.res_config_settings_view_form
+msgid "Configuration for different product types"
+msgstr "Konfiguracija za različite tipove proizvoda"
+
+#. module: l10n_rs
+#: model:ir.model,name:l10n_rs.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_product_type__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_product_type__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model,name:l10n_rs.model_res_currency_rate
+msgid "Currency Rate"
+msgstr "Kurs"
+
+#. module: l10n_rs
+#: model_terms:ir.ui.view,arch_db:l10n_rs.res_config_settings_view_form
+msgid "Default Accounting configuration"
+msgstr "Podrazumevana konfiguracija kontnog okvira"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_res_company__expense_account_group_id
+#: model:ir.model.fields,help:l10n_rs.field_res_config_settings__expense_account_group_id
+msgid "Default expense account group"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_res_company__down_payment_product_income_account_group_id
+#: model:ir.model.fields,help:l10n_rs.field_res_config_settings__down_payment_product_income_account_group_id
+msgid "Default income account group for down payment products"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_res_company__service_product_income_account_group_id
+#: model:ir.model.fields,help:l10n_rs.field_res_config_settings__service_product_income_account_group_id
+msgid "Default income account group for service products"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_res_company__product_product_income_account_group_id
+#: model:ir.model.fields,help:l10n_rs.field_res_config_settings__product_product_income_account_group_id
+msgid "Default income account group for storable and consumable products"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_chart_template__display_name
+#: model:ir.model.fields,field_description:l10n_rs.field_account_journal__display_name
+#: model:ir.model.fields,field_description:l10n_rs.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:l10n_rs.field_account_move_reversal__display_name
+#: model:ir.model.fields,field_description:l10n_rs.field_account_tax__display_name
+#: model:ir.model.fields,field_description:l10n_rs.field_account_tax_template__display_name
+#: model:ir.model.fields,field_description:l10n_rs.field_product_category__display_name
+#: model:ir.model.fields,field_description:l10n_rs.field_product_template__display_name
+#: model:ir.model.fields,field_description:l10n_rs.field_product_type__display_name
+#: model:ir.model.fields,field_description:l10n_rs.field_res_company__display_name
+#: model:ir.model.fields,field_description:l10n_rs.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:l10n_rs.field_res_currency_rate__display_name
+#: model:ir.model.fields,field_description:l10n_rs.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_res_config_settings__down_payment_product_income_account_group_id
+msgid "Down payment"
+msgstr "Avans"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_res_config_settings__expense_account_group_id
+msgid "Expense"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_product_category__expense_account_check
+msgid "Expense Account OK"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_res_config_settings__module_l10n_rs_partner
+msgid "Extended contact form"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_chart_template__property_account_income_foreign_id
+msgid "Foreign Income Account"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_chart_template__property_account_payable_foreign_id
+#: model:ir.model.fields,field_description:l10n_rs.field_res_company__account_foreign_payable_id
+#: model:ir.model.fields,field_description:l10n_rs.field_res_config_settings__account_foreign_payable_id
+msgid "Foreign Payable Account"
+msgstr "Inostrani konto obaveza"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_chart_template__property_account_receivable_foreign_id
+#: model:ir.model.fields,field_description:l10n_rs.field_res_company__account_foreign_receivable_id
+#: model:ir.model.fields,field_description:l10n_rs.field_res_config_settings__account_foreign_receivable_id
+msgid "Foreign Receivable Account"
+msgstr "Inostrani konto potraživanja"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_chart_template__id
+#: model:ir.model.fields,field_description:l10n_rs.field_account_journal__id
+#: model:ir.model.fields,field_description:l10n_rs.field_account_move_line__id
+#: model:ir.model.fields,field_description:l10n_rs.field_account_move_reversal__id
+#: model:ir.model.fields,field_description:l10n_rs.field_account_tax__id
+#: model:ir.model.fields,field_description:l10n_rs.field_account_tax_template__id
+#: model:ir.model.fields,field_description:l10n_rs.field_product_category__id
+#: model:ir.model.fields,field_description:l10n_rs.field_product_template__id
+#: model:ir.model.fields,field_description:l10n_rs.field_product_type__id
+#: model:ir.model.fields,field_description:l10n_rs.field_res_company__id
+#: model:ir.model.fields,field_description:l10n_rs.field_res_config_settings__id
+#: model:ir.model.fields,field_description:l10n_rs.field_res_currency_rate__id
+#: model:ir.model.fields,field_description:l10n_rs.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_product_category__income_account_check
+msgid "Income Account OK"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model,name:l10n_rs.model_account_journal
+msgid "Journal"
+msgstr "Dnevnik"
+
+#. module: l10n_rs
+#: model:ir.model,name:l10n_rs.model_account_move_line
+msgid "Journal Item"
+msgstr "Stavka knjiženja"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_chart_template____last_update
+#: model:ir.model.fields,field_description:l10n_rs.field_account_journal____last_update
+#: model:ir.model.fields,field_description:l10n_rs.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:l10n_rs.field_account_move_reversal____last_update
+#: model:ir.model.fields,field_description:l10n_rs.field_account_tax____last_update
+#: model:ir.model.fields,field_description:l10n_rs.field_account_tax_template____last_update
+#: model:ir.model.fields,field_description:l10n_rs.field_product_category____last_update
+#: model:ir.model.fields,field_description:l10n_rs.field_product_template____last_update
+#: model:ir.model.fields,field_description:l10n_rs.field_product_type____last_update
+#: model:ir.model.fields,field_description:l10n_rs.field_res_company____last_update
+#: model:ir.model.fields,field_description:l10n_rs.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:l10n_rs.field_res_currency_rate____last_update
+#: model:ir.model.fields,field_description:l10n_rs.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "Zadnja promena"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_product_type__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_product_type__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_product_type__name
+msgid "Name"
+msgstr "Naziv"
+
+#. module: l10n_rs
+#: model:account.account.type,name:l10n_rs.account_type_rs_other
+msgid "Ostalo"
+msgstr ""
+
+#. module: l10n_rs
+#: model:res.country.group,name:l10n_rs.outside_rs
+msgid "Outside RS"
+msgstr ""
+
+#. module: l10n_rs
+#: model:account.tax.group,name:l10n_rs.tax_group_rs_pdv0
+msgid "PDV 0%"
+msgstr ""
+
+#. module: l10n_rs
+#: model:account.tax.group,name:l10n_rs.tax_group_rs_pdv10
+msgid "PDV 10%"
+msgstr ""
+
+#. module: l10n_rs
+#: model:account.tax.group,name:l10n_rs.tax_group_rs_pdv10_advance
+msgid "PDV 10% Avans"
+msgstr ""
+
+#. module: l10n_rs
+#: model:account.tax.group,name:l10n_rs.tax_group_rs_pdv20
+msgid "PDV 20%"
+msgstr ""
+
+#. module: l10n_rs
+#: model:account.tax.group,name:l10n_rs.tax_group_rs_pdv20_advance
+msgid "PDV 20% Avans"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_product_product__preferred_type_check
+#: model:ir.model.fields,field_description:l10n_rs.field_product_template__preferred_type_check
+msgid "Preferred Type OK"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_product_category__preferred_product_type
+msgid "Preferred product types"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_chart_template__bank_account_code_prefix_foreign
+msgid "Prefix of the foreign bank accounts"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model,name:l10n_rs.model_product_category
+msgid "Product Category"
+msgstr "Grupa proizvoda"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_chart_template__property_account_income_categ_storable_foreign_id
+msgid "Product Foreign Income Account"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_chart_template__property_account_income_categ_storable_id
+msgid "Product Income Account"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_res_company__product_sequence_id
+#: model:ir.model.fields,field_description:l10n_rs.field_res_config_settings__product_sequence_id
+msgid "Product Sequence"
+msgstr "Sekvenca proizvoda"
+
+#. module: l10n_rs
+#: model:ir.model,name:l10n_rs.model_product_template
+msgid "Product Template"
+msgstr "Predložak proizvoda"
+
+#. module: l10n_rs
+#: model:ir.actions.act_window,name:l10n_rs.action_product_type
+#: model_terms:ir.ui.view,arch_db:l10n_rs.product_type_tree_view
+msgid "Product Type"
+msgstr "Tip proizvoda"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_product_type__product_type
+msgid "Product type"
+msgstr "Tip proizvoda"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_res_currency_rate__rate
+msgid "Rate"
+msgstr "Stopa"
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_tax_template__refund_account_id
+msgid "Refund Account"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_tax__related_pdv_tax
+msgid "Related Tax"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_account_tax_template__related_pdv_tax
+msgid "Related Tax Template"
+msgstr ""
+
+#. module: l10n_rs
+#: model_terms:ir.ui.view,arch_db:l10n_rs.res_config_settings_view_form
+msgid "Sequence"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_res_config_settings__service_product_income_account_group_id
+msgid "Service Income"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_res_config_settings__product_product_income_account_group_id
+msgid "Storable and consumable Income"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model,name:l10n_rs.model_account_tax
+msgid "Tax"
+msgstr "Porez"
+
+#. module: l10n_rs
+#: model:ir.model,name:l10n_rs.model_account_tax_template
+msgid "Templates for Taxes"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,help:l10n_rs.field_res_currency_rate__rate
+msgid "The rate of the currency to the currency of rate 1"
+msgstr "Stopa valute u odnosu na valutu stope 1"
+
+#. module: l10n_rs
+#: model_terms:ir.ui.view,arch_db:l10n_rs.res_config_settings_view_form
+msgid "This will install partner extensions module for serbian localization"
+msgstr "Postavljanje će instalirati modul sa dodacima za partnere"
+
+#. module: l10n_rs
+#: model:product.product,uom_name:l10n_rs.l10n_rs_advance_product
+#: model:product.template,uom_name:l10n_rs.l10n_rs_advance_product_product_template
+msgid "Units"
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model.fields,field_description:l10n_rs.field_res_company__account_vendor_refund_expense_account_id
+#: model:ir.model.fields,field_description:l10n_rs.field_res_config_settings__account_vendor_refund_expense_account_id
+msgid "Vendor Refund Expense Account"
+msgstr ""
+
+#. module: l10n_rs
+#: model_terms:ir.ui.view,arch_db:l10n_rs.product_category_form_view
+msgid ""
+"Wrong account configuration. You need to select Expense account configured "
+"in the settings."
+msgstr ""
+
+#. module: l10n_rs
+#: model_terms:ir.ui.view,arch_db:l10n_rs.product_category_form_view
+msgid ""
+"Wrong account configuration. You need to select Income account configured in"
+" the settings."
+msgstr ""
+
+#. module: l10n_rs
+#: model_terms:ir.ui.view,arch_db:l10n_rs.product_template_form_view
+msgid ""
+"Wrong product configuration. Please match product category preferred type "
+"and product type."
+msgstr ""
+
+#. module: l10n_rs
+#: model:ir.model,name:l10n_rs.model_product_type
+msgid "product.type"
+msgstr ""
